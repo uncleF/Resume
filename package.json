@@ -1,0 +1,30 @@
+{
+	"private" : true,
+	"devDependencies" : {
+		"grunt": "~0.4.5",
+		"load-grunt-tasks": "*",
+		"grunt-htmlhint": "*",
+		"grunt-contrib-csslint": "*",
+		"grunt-csscss": "*",
+		"grunt-colorguard": "*",
+		"grunt-analyze-css": "*",
+		"grunt-sass": "*",
+		"grunt-autoprefixer": "*",
+		"grunt-contrib-concat": "*",
+		"grunt-string-replace": "*",
+		"grunt-uncss": "*",
+		"grunt-csscomb": "*",
+		"grunt-cssc": "*",
+		"grunt-contrib-cssmin": "*",
+		"grunt-processhtml": "*",
+		"grunt-contrib-htmlmin": "*",
+		"grunt-premailer": "*",
+		"grunt-wkhtmltopdf": "*",
+		"grunt-html2md": "*",
+		"grunt-contrib-clean": "*",
+		"grunt-contrib-copy": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-concurrent": "*",
+		"grunt-wait": "*"
+	}
+}

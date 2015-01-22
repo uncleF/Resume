@@ -1,0 +1,527 @@
+@import "tx/tx";
+@import "tx/tx-project";
+
+
+
+// Base Typography & Rhythm
+
+
+
+/* Typography & Rhythm */
+
+html {
+	@include tx-baseline;
+	@include tx-font-adjustment;
+}
+
+body {
+	color: $text;
+	background: $background;
+	font-family: $font;
+}
+
+@include tx-selection-style;
+
+article, aside, figure, figcaption, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+a {
+	color: $link;
+	text-decoration: underline;
+
+	&:visited {
+		color: $visited;
+	}
+
+	&:hover {
+		color: $hover;
+		text-decoration: none;
+	}
+
+	&:active {
+		color: $active;
+	}
+
+	&:focus {
+		outline: 1px dotted $focus-outline;
+	}
+
+}
+
+label, button, .button {
+	cursor: pointer;
+}
+
+label {
+	border-bottom: 1px dotted $focus-outline;
+
+	&:focus {
+		border: none;
+		outline: 1px dotted $focus-outline;
+	}
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	text-rendering: optimizelegibility;
+	page-break-after: avoid;
+	orphans: 3;
+	widows: 3;
+}
+
+h1 {
+	$header1-color: $green;
+	$header1-borderColor: $grayLight;
+
+	@include tx-rhythm(2, 1, $h1-font-size);
+	@include tx-rhythm-padding(0, .5, $h1-font-size);
+	@include tx-font-size($h1-font-size, 1.5);
+	color: $header1-color;
+	border-bottom: 1px solid $header1-borderColor;
+}
+
+h2 {
+	$header2-color: $green;
+
+	@include tx-rhythm(2, 1, $h2-font-size);
+	@include tx-font-size($h2-font-size, 1.25);
+	color: $header2-color;
+
+	a {
+		color: $header2-color;
+
+		&:hover, &:active {
+			color: $header2-color;
+		}
+
+	}
+
+}
+
+h3 {
+	@include tx-rhythm(1, 1, $h3-font-size);
+	@include tx-font-size($h3-font-size, 1);
+}
+
+h5 {
+	@include tx-rhythm(1, 1, $h5-font-size);
+	@include tx-font-size($h5-font-size, 1);
+}
+
+h6 {
+	@include tx-rhythm(1, 1, $h6-font-size);
+	@include tx-font-size($h6-font-size, 1);
+}
+
+p, pre, dl, ul, ol, address, video, audio, table {
+	@include tx-rhythm(1, 1);
+}
+
+p, blockquote, li, dd {
+	@include tx-hyphens(auto);
+}
+
+pre, code, samp, var, tt {
+	font-family: $font-mono;
+}
+
+pre, code, samp, var {
+	$text-code: $redDark;
+
+	color: $text-code;
+}
+
+pre {
+	@include tx-force-wrap;
+	padding: 0 1.5em;
+	overflow: hidden;
+}
+
+blockquote, em, cite, q, i {
+	font-style: italic;
+}
+
+blockquote, q {
+	quotes: none;
+
+	&:before, &:after {
+		content: "";
+		content: none;
+	}
+
+}
+
+blockquote {
+	@include tx-rhythm(1, 1, $mrgt: 3em, $mlft: 3em);
+}
+
+address {
+	font-style: normal;
+}
+
+dt {
+	@include tx-rhythm(1);
+	font-weight: bold;
+}
+
+dd {
+	@include tx-rhythm(0, 1, $mlft: 1.5em);
+	font-style: italic;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+
+	li {
+		position: relative;
+		padding: 0 0 0 1.5em;
+
+		&:before {
+			$listBullet-size: 5px;
+			$listBullet-color: $grayLight;
+
+			@include tx-pseudo;
+			width: $listBullet-size;
+			height: $listBullet-size;
+			left: .5em;
+			top: .65em;
+			background: $listBullet-color;
+			border-radius: 50%;
+		}
+
+	}
+
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+li {
+	@include tx-rhythm(.5, .5);
+
+	ul, ol {
+		@include tx-rhythm(1, 1, $mlft: 1.5em);
+	}
+
+}
+
+strong, dfn, b, kbd, acronym, abbr, var {
+	font-weight: bold;
+}
+
+acronym, abbr, ins, mark, del {
+	text-decoration: none;
+	cursor: help;
+}
+
+acronym, abbr, ins, mark {
+	$acronym-color: $blueLight;
+
+	color: $acronym-color;
+	border-bottom: 1px dotted $acronym-color;
+}
+
+acronym, abbr {
+	margin: 0 -.075em 0 0;
+	letter-spacing: .075em;
+}
+
+del {
+	$del-color: $redDark;
+
+	color: $del-color;
+	border-bottom: 1px dotted $del-color;
+}
+
+kbd {
+	$kbd-color: $gray;
+	$kbd-bg: $grayLight;
+
+	@include tx-inline-block;
+	@include tx-grid-height(1);
+	padding: 0 .5em;
+	color: $kbd-color;
+	background: $kbd-bg;
+	background-clip: padding-box;
+	font-family: $font-mono;
+	font-weight: bold;
+	letter-spacing: .1em;
+	vertical-align: top;
+	border-radius: 3px;
+}
+
+var {
+	$var-color: $redDark;
+
+	color: $var-color;
+	font-style: normal;
+}
+
+del, strike, s {
+	text-decoration: line-through;
+}
+
+sup, sub {
+	@include tx-font-size($font-size * .75, 0);
+	position: relative;
+}
+
+sup {
+	top: -.65em;
+}
+
+sub {
+	bottom: -.25em;
+}
+
+big {
+	@include tx-font-size($font-size * 1.5, 0);
+}
+
+small {
+	@include tx-font-size($font-size * .75, 0);
+}
+
+u {
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+video {
+
+	&::-webkit-media-controls-play-button {
+
+	}
+
+	&::-webkit-media-controls-timeline {
+
+	}
+
+	&::-webkit-media-controls-current-time-display{
+
+	}
+
+	&::-webkit-media-controls-time-remaining-display {
+
+	}
+
+	&::-webkit-media-controls-fullscreen-button {
+
+	}
+
+	&::-webkit-media-controls-toggle-closed-captions-button {
+
+	}
+
+	&::-webkit-media-controls-mute-button {
+
+	}
+
+	&::-webkit-media-controls-volume-slider {
+
+	}
+
+}
+
+audio {
+
+	&::-webkit-media-controls-play-button {
+
+	}
+
+	&::-webkit-media-controls-timeline {
+
+	}
+
+	&::-webkit-media-controls-current-time-display{
+
+	}
+
+	&::-webkit-media-controls-time-remaining-display {
+
+	}
+
+	&::-webkit-media-controls-volume-slider {
+
+	}
+
+}
+
+caption {
+	@include tx-rhythm-padding(0, .5);
+	font-weight: bold;
+	text-align: left;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td, th {
+	$cell-borderColor: $grayLight;
+
+	@include tx-table-borders(1px, .5, $bcolor: $cell-borderColor);
+}
+
+th {
+	font-weight: bold;
+	text-align: left;
+}
+
+fieldset {
+	padding: 0;
+	border: none;
+}
+
+legend {
+	$legend-padding: 1.5em;
+	$legend-bg: $grayLight;
+
+	position: relative;
+	left: -$legend-padding;
+	padding: 0 $legend-padding;
+	background: $legend-bg;
+	font-weight: bold;
+}
+
+
+input, select, button, textarea {
+	@include tx-font-size($font-size, 1);
+	font-family: $font;
+	margin: 0;
+}
+
+input, button, textarea {
+	padding: 0 .5em;
+	box-sizing: content-box;
+}
+
+input, select, textarea {
+
+	&[disabled], &[readonly] {
+		opacity: .5;
+		cursor: default;
+		cursor: not-allowed;
+	}
+
+}
+
+input, button {
+	@include tx-form-height(1, 0);
+	border: none;
+
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+
+}
+
+input, select {
+	vertical-align: top;
+}
+
+button, select {
+	text-transform: none;
+}
+
+.inputRadio, .inputCheckbox {
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+.inputFile {
+	height: auto;
+	border: none;
+	line-height: normal;
+}
+
+.inputSearch {
+	@include tx-appearance;
+
+
+
+}
+
+.inputNumber {
+	@include tx-appearance;
+
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+	}
+
+}
+
+.field, textarea, select {
+	$field-border: $grayLight;
+
+	display: block;
+	border: 1px solid $field-border;
+}
+
+.field {
+	@include tx-form-height(1);
+
+	&-search {
+		@include tx-form-height(2);
+	}
+
+}
+
+textarea {
+	@include tx-form-height(10);
+	overflow: auto;
+}
+
+select {
+	@include tx-form-height(1, 0);
+
+	&[multiple] {
+		@include tx-form-height(5.1);
+	}
+
+}
+
+hr {
+	$hr-borderColor: $black;
+
+	@include tx-rhythm(1, 1);
+	display: block;
+	height: 0;
+	padding: 0;
+	border-top: 1px solid $hr-borderColor;
+}
+
+
+
+/* High DPI Typography */
+
+@media only screen and (min-resolution: 1.5dppx), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 150dpi) {
+
+	html {
+		text-rendering: optimizelegibility;
+	}
+
+}
+
+
+
+/* Phone Typography */
+
+@media handheld, only screen and (max-width: 720px) {
+
+	table, tr, th, td {
+		display: block;
+	}
+
+}

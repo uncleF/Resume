@@ -1,0 +1,210 @@
+@import "tx/tx";
+@import "tx/tx-project";
+
+
+
+// Layout
+
+
+
+/* Layout Base */
+
+html {
+	min-height: 100%;
+	-webkit-overflow-scrolling: touch;
+}
+
+body {
+	@include tx-scroll-bar(true);
+	position: relative;
+	margin: 0;
+}
+
+
+
+/* Content */
+
+.content,.headerContent, .footerContent {
+	width: $min-width;
+	margin: 0 auto;
+}
+
+.header, .footer {
+	$headerFooter-color: $white;
+	$headerFooter-backgroundStart: $green;
+	$headerFooter-backgroundEnd: $greenLight;
+
+	color: $headerFooter-color;
+	background: $headerFooter-backgroundStart;
+	background: linear-gradient(30deg, $headerFooter-backgroundStart, $headerFooter-backgroundEnd);
+
+	a {
+		$hedaerFooter-link: $greenLightest;
+
+		color: $hedaerFooter-link;
+	}
+
+	.phoneLink {
+		$phoneLink-color: $white;
+
+		color: $phoneLink-color;
+		text-decoration: none;
+		cursor: default;
+
+		&:hover, &:active {
+			color: $phoneLink-color;
+		}
+
+	}
+
+}
+
+.header {
+	@include tx-rhythm-padding(2, 2);
+
+	h1 {
+		$headerHeader-fontSize: $font-size * 4;
+		$headerHeader-color: $white;
+
+		@include tx-font-size($headerHeader-fontSize, 3);
+		margin: 0;
+		color: $headerHeader-color;
+		border: none;
+	}
+
+}
+
+.resumeNote {
+	$resumeNote-color: $greenLightest;
+
+	color: $resumeNote-color;
+}
+
+.emplymentDate {
+	$emplymentDate-color: $grayLight;
+
+	color: $emplymentDate-color;
+	white-space: nowrap;
+}
+
+.contacts {
+
+	dt, dd {
+		margin: 0;
+	}
+
+	dt {
+		float: left;
+		@include tx-rhythm(0, .25, $mrgt: .5em);
+		font-weight: normal;
+		clear: left;
+
+		&:after {
+			@include tx-pseudo(inline, relative, ":");
+		}
+
+	}
+
+	dd {
+		@include tx-rhythm(0, .25);
+		font-style: normal;
+	}
+
+	.footer & {
+		@include tx-inline-block;
+		margin: 0;
+
+		dt, dd {
+			float: none;
+			@include tx-inline-block;
+		}
+
+		dt {
+			margin: 0 .25em 0 1.5em;
+		}
+
+	}
+
+}
+
+.footer {
+	$footer-fontSize: $font-size * .85;
+
+	@include tx-rhythm(3, 0, $footer-fontSize);
+	@include tx-rhythm-padding(1, 1, $footer-fontSize);
+	@include tx-font-size($footer-fontSize, 1);
+	text-align: center;
+	white-space: nowrap;
+}
+
+
+
+/* Phone Layout */
+
+@media handheld, only screen and (max-width: 599px) {
+
+	.content, .headerContent, .footerContent {
+		width: auto;
+		padding: 0 $gap;
+	}
+
+	.header, .footer {
+		$headerFooter-background: $green;
+
+		background: $headerFooter-background;
+	}
+
+	.emplymentDate {
+		display: block;
+		margin: .25em 0 0;
+		white-space: normal;
+	}
+
+	.contacts {
+
+		.footer & {
+			display: block;
+			margin: 0;
+
+			dt, dd {
+				display: block;
+			}
+
+			dt {
+				float: left;
+				margin: 0 .25em 0 0;
+			}
+
+		}
+
+	}
+
+	.footer {
+		text-align: left;
+	}
+
+}
+
+
+
+/* Large Screen Layout */
+
+@media handheld, only screen and (min-width: 600px) {
+
+	.columns {
+		column-count: 2;
+
+		li {
+			margin: 0;
+			@include tx-rhythm-padding(.25, .25, $plft: 1.5em);
+			break-inside: avoid;
+
+			&:before {
+				margin: .35em 0 0;
+			}
+
+		}
+
+	}
+
+}

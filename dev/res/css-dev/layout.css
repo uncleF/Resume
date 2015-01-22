@@ -1,0 +1,151 @@
+/* Layout Base */
+html {
+	-webkit-overflow-scrolling: touch; 
+	min-height: 100%;
+}
+
+body {
+	position: relative;
+	overflow-x: auto;
+	overflow-y: scroll;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	margin: 0;
+}
+
+/* Content */
+.content, .headerContent, .footerContent {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.header, .footer {
+	color: #ffffff;
+	background: #007236;
+	background: -webkit-linear-gradient(60deg, #007236, #39b54a);
+	background: linear-gradient(30deg, #007236, #39b54a);
+}
+.header a, .footer a {
+	color: #6fe47f;
+}
+.header .phoneLink, .footer .phoneLink {
+	color: #ffffff;
+	text-decoration: none;
+	cursor: default;
+}
+.header .phoneLink:hover, .header .phoneLink:active, .footer .phoneLink:hover, .footer .phoneLink:active {
+	color: #ffffff;
+}
+
+.header {
+	padding: 3em 0;
+}
+.header h1 {
+	border: none; 
+	margin: 0;
+	color: #ffffff;
+	font-size: 4em;
+	line-height: 1.125em;
+}
+
+.resumeNote {
+	color: #6fe47f;
+}
+
+.emplymentDate {
+	color: #bebebe;
+	white-space: nowrap;
+}
+
+.contacts dt, .contacts dd {
+	margin: 0;
+}
+.contacts dt {
+	float: left;
+	clear: left; 
+	margin: 0 .5em .375em 0;
+	font-weight: normal;
+}
+.contacts dt:after {
+	position: relative; 
+	content: ":";
+	display: inline;
+}
+.contacts dd {
+	margin: 0 0 .375em;
+	font-style: normal;
+}
+.footer .contacts {
+	display: inline-block;
+	margin: 0;
+}
+.footer .contacts dt, .footer .contacts dd {
+	display: inline-block; 
+	float: none;
+}
+.footer .contacts dt {
+	margin: 0 .25em 0 1.5em;
+}
+
+.footer {
+	padding: 1.76471em 0;
+	margin: 5.29412em 0 0;
+	font-size: .85em;
+	text-align: center;
+	line-height: 1.76471em;
+	white-space: nowrap;
+}
+
+/* Phone Layout */
+@media handheld, only screen and (max-width: 599px) {
+	.content, .headerContent, .footerContent {
+		width: auto;
+		padding: 0 30px;
+	}
+
+	.header, .footer {
+		background: #007236;
+	}
+
+	.emplymentDate {
+		display: block;
+		margin: .25em 0 0;
+		white-space: normal;
+	}
+
+	.footer .contacts {
+		display: block;
+		margin: 0;
+	}
+	.footer .contacts dt, .footer .contacts dd {
+		display: block;
+	}
+	.footer .contacts dt {
+		float: left;
+		margin: 0 .25em 0 0;
+	}
+
+	.footer {
+		text-align: left;
+	}
+}
+
+/* Large Screen Layout */
+@media handheld, only screen and (min-width: 600px) {
+	.columns {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+	.columns li {
+		padding: .375em 0 .375em 1.5em;
+		margin: 0;
+		break-inside: avoid; 
+		page-break-inside: avoid;
+
+		-webkit-column-break-inside: avoid;
+	}
+	.columns li:before {
+		margin: .35em 0 0;
+	}
+}
+/*# sourceMappingURL=layout.css.map */
