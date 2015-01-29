@@ -1,12 +1,14 @@
 # Илья Бирюков
 
-Front End разработчик (последняя редакция 15.01.2015)
+Front End разработчик (последняя редакция 29.01.2015)
 
 E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
 
 Телефон [+7 918 211-37-92](tel:+79182113792)
 
 Skype [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
+
+GitHub [uncleF](https://github.com/uncleF)
 
 # О себе
 
@@ -55,7 +57,8 @@ Front end разработчик с 8-мью годами опыта разра�
 *   Sublime Text, Eclipse, Xcode, Android Studio
 *   Grunt, Bower, Gulp, Apache Ant
 *   Adobe Photoshop, Pixelmator, Adobe Illustrator, Adobe Flash, Sketca SVG Editor, Inkscape
-*   Basecamp, InVision   ,  Megaplan  , Toggl Desktop
+*   Ghostlab, [Litmus](https://litmus.com)
+*   Basecamp, InVision, Megaplan, Toggl Desktop
 *   Git, [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/)
 *   Wordpress, Drupal
 

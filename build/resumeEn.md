@@ -1,12 +1,14 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 01/15/2015)
+Front End Developer (last revisited on 01/29/2015)
 
 E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 
 Phone [+7 918 211-37-92](tel:+79182113792)
 
 Skype [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
+
+GitHub [uncleF](https://github.com/uncleF)
 
 # Profile
 
@@ -54,6 +56,7 @@ Advanced front end web developer with 8 years of experience in developing and im
 *   Sublime Text, Eclipse, Xcode, Android Studio
 *   Emmet, Grunt, Bower, Gulp, Apache Ant
 *   Adobe Photoshop, Pixelmator, Adobe Illustrator, Adobe Flash, Sketca SVG Editor, Inkscape
+*   Ghostlab, [Litmus](https://litmus.com)
 *   Basecamp, InVision, Megaplan, Toggl Desktop
 *   Git, [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/)
 *   Wordpress, Drupal

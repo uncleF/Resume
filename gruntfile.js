@@ -187,8 +187,31 @@ module.exports = function(grunt) {
 						pattern: /@tx-language/gi,
 						replacement: project.language
 					},{
-						pattern: /@tx-launch/gi,
-						replacement: project.index
+						pattern: /@tx-revisionDateRu/gi,
+						replacement: {
+							getDateRu: function() {
+								var TODAY = new Date(),
+										DAY = TODAY.getDate(),
+										MONTH = TODAY.getMonth() + 1,
+										YEAR = TODAY.getFullYear();
+								DAY = DAY < 10 ? "0" + DAY : DAY;
+								MONTH = MONTH < 10 ? "0" + MONTH : DAY;
+								return DAY + "." + MONTH + "." + YEAR;
+							}
+						}.getDateRu()
+					},{
+						pattern: /@tx-revisionDateEn/gi,
+						replacement: {
+							getDateEn: function() {
+								var TODAY = new Date(),
+										DAY = TODAY.getDate(),
+										MONTH = TODAY.getMonth() + 1,
+										YEAR = TODAY.getFullYear();
+								DAY = DAY < 10 ? "0" + DAY : DAY;
+								MONTH = MONTH < 10 ? "0" + MONTH : DAY;
+								return MONTH + "/" + DAY + "/" + YEAR;
+							}
+						}.getDateEn()
 					},{
 						pattern: /.!-- @tx-css -->(.|\t|\s|\r?\n|\r)*?!-- \/@tx-css -->/gi,
 						replacement: {
