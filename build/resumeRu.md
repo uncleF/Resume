@@ -1,6 +1,6 @@
 # Илья Бирюков
 
-Front End разработчик (последняя редакция 29.01.2015)
+Front End разработчик (последняя редакция 02.03.2015)
 
 E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
 
@@ -56,7 +56,7 @@ Front end разработчик с 8-мью годами опыта разра�
 *   Собственный открытый [инструмент](https://github.com/uncleF/TemplateX) (мини-фреймфорк ) для быстрого развертывания среды разработки.
 *   Sublime Text, Eclipse, Xcode, Android Studio
 *   Grunt, Bower, Gulp, Apache Ant
-*   Adobe Photoshop, Pixelmator, Adobe Illustrator, Adobe Flash, Sketca SVG Editor, Inkscape
+*   Adobe Photoshop, Sketch, Pixelmator, Adobe Illustrator, Adobe Flash, Sketca SVG Editor, Inkscape
 *   Ghostlab, [Litmus](https://litmus.com)
 *   Basecamp, InVision, Megaplan, Toggl Desktop
 *   Git, [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/)
@@ -108,15 +108,16 @@ Front end разработчик с 8-мью годами опыта разра�
 
 Диплом факультета прикладной математики [Кубанского Государственного Университета](http://www.kubsu.ru/).
 
-# Примеры работы
+# Примеры работ
 
+*   [http://ir.magnit.com/](http://ir.magnit.com/)
 *   [http://ruport.ru/](http://ruport.ru/)
 *   [http://зарулем23.рф/](http://зарулем23.рф/)
 *   [http://shans23.ru/](http://shans23.ru/)
 *   [http://buhtagold.ru/](http://buhtagold.ru/)
 *   [http://cifra-group.ru/](http://cifra-group.ru/)
 *   [http://emercit.ru/](http://emercit.ru/)
-*   [http://buhtagold.ru/content/7/](http://buhtagold.ru/content/7/) (Интерактивная карта)
+*   [http://buhtagold.ru/content/7/](http://buhtagold.ru/content/7/)
 *   [http://gsyp.ru/](http://gsyp.ru/)
 *   [http://gsyp.ru/complex/building/2/](http://gsyp.ru/complex/building/2/)
 *   [http://dvinuli.ru/](http://dvinuli.ru/)

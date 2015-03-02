@@ -1,6 +1,6 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 01/29/2015)
+Front End Developer (last revisited on 03/02/2015)
 
 E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 
@@ -55,7 +55,7 @@ Advanced front end web developer with 8 years of experience in developing and im
 *   My own open [development tool](https://github.com/uncleF/TemplateX) (mini-framework) for rapid project workflow setup
 *   Sublime Text, Eclipse, Xcode, Android Studio
 *   Emmet, Grunt, Bower, Gulp, Apache Ant
-*   Adobe Photoshop, Pixelmator, Adobe Illustrator, Adobe Flash, Sketca SVG Editor, Inkscape
+*   Adobe Photoshop, Sketch, Pixelmator, Adobe Illustrator, Adobe Flash, Sketca SVG Editor, Inkscape
 *   Ghostlab, [Litmus](https://litmus.com)
 *   Basecamp, InVision, Megaplan, Toggl Desktop
 *   Git, [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/)
@@ -68,7 +68,7 @@ Advanced front end web developer with 8 years of experience in developing and im
 ### Front End Developer & Consultant
 
 *   Developed multiple websites and applications.
-*   Built a Grunt-based tool to assemble templates for a proprietary landing page generator.
+*   Built a Grunt-based template assembling tool for the proprietary landing page generator.
 *   Consulted multiple clients on front end performance and accessibility.
 
 ## [Digital-agency Spider Group](http://spider.ru/en/) – February 2008 - March 2014
@@ -79,13 +79,13 @@ Advanced front end web developer with 8 years of experience in developing and im
 *   Developed user interface for the [e-commerce iOS app](https://itunes.apple.com/us/app/fingo.-furniture.-try-before/id567070760?mt=8) from scratch.
 *   Prototyped and built interfaces for the interactive expo booths.
 *   Was responsible for setting up development environment and workflow.
-*   Built a few tools for automating development process.
+*   Built several tools for automating development process.
 *   Consulted co-workers and clients on all matters concerning front end development.
 *   Gained some experience in project management and native development for the iOS and Android.
 
 ### Front End Developer – February 2008 - January 2012
 
-*   Developed multiple websites using few CMS developed in-house and out of the box (PHP, Python).
+*   Developed multiple websites using several CMS developed in-house and out of the box (PHP, Python).
 *   Worked on [high traffic regional information portal](http://www.kuban.ru/).
 *   Participated in development of interfaces for the interactive expo booths.
 *   Created numerous marketing e-mail templates.
@@ -102,9 +102,9 @@ Advanced front end web developer with 8 years of experience in developing and im
 
 ### Front End Developer
 
-*   String of awful sites for the friends.
+*   String of awful sites build for friends.
 *   First attempts to earn some money.
-*   ...a lot of mistakes were made.
+*   ...mistakes were made.
 
 # Education
 
@@ -112,13 +112,14 @@ Advanced front end web developer with 8 years of experience in developing and im
 
 # Examples
 
+*   [http://ir.magnit.com/](http://ir.magnit.com/)
 *   [http://ruport.ru/](http://ruport.ru/)
 *   [http://зарулем23.рф/](http://зарулем23.рф/)
 *   [http://shans23.ru/](http://shans23.ru/)
 *   [http://buhtagold.ru/](http://buhtagold.ru/)
 *   [http://cifra-group.ru/](http://cifra-group.ru/)
 *   [http://emercit.ru/](http://emercit.ru/)
-*   [http://buhtagold.ru/content/7/](http://buhtagold.ru/content/7/) (Interactive map)
+*   [http://buhtagold.ru/content/7/](http://buhtagold.ru/content/7/)
 *   [http://gsyp.ru/](http://gsyp.ru/)
 *   [http://gsyp.ru/complex/building/2/](http://gsyp.ru/complex/building/2/)
 *   [http://dvinuli.ru/](http://dvinuli.ru/)
