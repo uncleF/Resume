@@ -1,6 +1,6 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 03/06/2015)
+Front End Developer (last revisited on 03/07/2015)
 
 E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 
@@ -12,15 +12,15 @@ GitHub [uncleF](https://github.com/uncleF)
 
 # Profile
 
-Advanced front end developer with 8 years of experience in developing and implementing sites and web applications (modern front end development stack ­— HTML5, CSS3, JavaScript). Have a lot of experience in prototyping and developing user interfaces (sites, apps, e-mails, IPTV, interactive expo booths). Some expirience in project management and developing native applications for the iOS and Android.
+Front end developer with a computer science degree, 8 years of experience and deep understanding of modern development process and its challenges. Experienced in prototyping and developing user interfaces (sites, apps, emails, IPTV, interactive expo booths, etc.). Have some experience in project management and developing native apps for the iOS and Android.
 
-*   Rapid learner, able to complete projects fast and efficient.
-*   Deep understanding of modern front end development process and its challenges.
-*   Write clean and comprehensive code.
+*   Able to complete projects fast and efficient.
 *   Good problem solving and collaborative skills.
+*   Rapid learner.
+*   Write clean and comprehensive code.
 *   Staying on the bleeding edge of front end development.
 *   Obsessed with efficient development workflow, personal productivity and constant growth as front end developer.
-*   Advanced English.
+*   Conversational English
 
 ## Areas of Expertise
 
