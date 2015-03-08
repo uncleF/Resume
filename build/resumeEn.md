@@ -1,6 +1,6 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 03/07/2015)
+Front End Developer (last revisited on 03/09/2015)
 
 E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 
@@ -12,14 +12,13 @@ GitHub [uncleF](https://github.com/uncleF)
 
 # Profile
 
-Front end developer with a computer science degree, 8 years of experience and deep understanding of modern development process and its challenges. Experienced in prototyping and developing user interfaces (sites, apps, emails, IPTV, interactive expo booths, etc.). Have some experience in project management and developing native apps for the iOS and Android.
+Front end developer with a computer science degree, 8 years of experience and deep understanding of modern development process and its challenges. Experienced in prototyping and developing user interfaces (sites, apps, emails, IPTV, interactive expo booths, etc.). Have some experience in project management and developing native apps for the iOS and Android. Obsessed with efficient development workflow, personal productivity and constant growth as front end developer.
 
 *   Able to complete projects fast and efficient.
 *   Good problem solving and collaborative skills.
 *   Rapid learner.
 *   Write clean and comprehensive code.
 *   Staying on the bleeding edge of front end development.
-*   Obsessed with efficient development workflow, personal productivity and constant growth as front end developer.
 *   Conversational English
 
 ## Areas of Expertise
@@ -127,7 +126,5 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   [http://topliga.ru/](http://topliga.ru/)
 *   [http://fingo.pro/](http://fingo.pro/)
 *   [http://idisplay.spider.ru/](http://idisplay.spider.ru/)
-*   [http://добрый.рф/упаковка](http://добрый.рф/упаковка)
 *   [http://www.arkhyz-jivitsa.ru/landing/](http://www.arkhyz-jivitsa.ru/landing/)
-*   [http://www.megavita-energy.ru/landing/](http://www.megavita-energy.ru/landing/)
 *   [http://moscow.arkhyz-visma.ru/landing/](http://moscow.arkhyz-visma.ru/landing/)
