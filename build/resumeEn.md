@@ -1,6 +1,6 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 03/09/2015)
+Front End Developer (last revisited on 03/10/2015)
 
 E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 
@@ -74,9 +74,9 @@ Front end developer with a computer science degree, 8 years of experience and de
 
 ### Senior Front End Developer – January 2012 - March 2014
 
-*   Developed multiple websites and applications. Including [hight traffic e-commerce site](http://topliga.ru/).
+*   Developed multiple websites and applications. Including [high traffic e-commerce site](http://topliga.ru/).
 *   Developed user interface for the [e-commerce iOS app](https://itunes.apple.com/us/app/fingo.-furniture.-try-before/id567070760?mt=8) from scratch.
-*   Prototyped and built interfaces for the interactive expo booths.
+*   Built UI prototyps and developed interfaces for the interactive expo booths.
 *   Was responsible for setting up development environment and workflow.
 *   Built several tools for automating development process.
 *   Consulted co-workers and clients on all matters concerning front end development.

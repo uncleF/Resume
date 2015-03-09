@@ -1,6 +1,6 @@
 # Илья Бирюков
 
-Front End разработчик (последняя редакция 09.03.2015)
+Front End разработчик (последняя редакция 10.03.2015)
 
 E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
 
