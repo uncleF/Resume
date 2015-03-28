@@ -1,6 +1,6 @@
 # Илья Бирюков
 
-Front End разработчик (последняя редакция 14.03.2015)
+Front End разработчик (последняя редакция 28.03.2015)
 
 E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
 
@@ -108,6 +108,8 @@ Front end разработчик с дипломом факультета при
 
 # Примеры работ
 
+*   [http://kristall-komfort.ru/](http://kristall-komfort.ru/)
+*   [http://optrika.ru/](http://optrika.ru/)
 *   [http://www.domskala.ru/](http://www.domskala.ru/)
 *   [http://ir.magnit.com/](http://ir.magnit.com/)
 *   [http://ruport.ru/](http://ruport.ru/)

@@ -1,6 +1,6 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 03/14/2015)
+Front End Developer (last revisited on 03/28/2015)
 
 E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 
@@ -111,6 +111,8 @@ Front end developer with a computer science degree, 8 years of experience and de
 
 # Examples
 
+*   [http://kristall-komfort.ru/](http://kristall-komfort.ru/)
+*   [http://optrika.ru/](http://optrika.ru/)
 *   [http://www.domskala.ru/](http://www.domskala.ru/)
 *   [http://ir.magnit.com/](http://ir.magnit.com/)
 *   [http://ruport.ru/](http://ruport.ru/)
