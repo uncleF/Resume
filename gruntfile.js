@@ -259,7 +259,7 @@ module.exports = function(grunt) {
             replacement: ''
           }, {
             pattern: /<\/dd>(\r?\n|\r)+/gi,
-            replacement: '\n'
+            replacement: '\n\n'
           }, {
             pattern: /<header class="header">\n\n<div class="headerContent">\n\n*/gi,
             replacement: ''

@@ -3,8 +3,11 @@
 Front End Developer (last revisited on 05/29/2015)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
+
 Phone – [+7 918 211-37-92](tel:+79182113792)
+
 Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
+
 GitHub – [uncleF](https://github.com/uncleF)
 
 # Profile
@@ -133,5 +136,7 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   [http://moscow.arkhyz-visma.ru/landing/](http://moscow.arkhyz-visma.ru/landing/)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
+
 Phone – [+7 918 211-37-92](tel:+79182113792)
+
 Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
