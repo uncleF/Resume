@@ -14,19 +14,19 @@
       "follow_symlinks": true,
       "name": "Resume: Project",
       "path": "."
-    },{
+    }, {
       "follow_symlinks": true,
       "name": "Resume: HTML",
       "path": "dev/templates"
-    },{
+    }, {
       "follow_symlinks": true,
       "name": "Resume: Sass",
       "path": "dev/res/sass-dev"
-    },{
+    }, {
       "follow_symlinks": true,
       "name": "Resume: JavaScript",
       "path": "dev/res/js-dev"
-    },{
+    }, {
       "file_exclude_patterns":
       [
         "*.jpg",
@@ -38,7 +38,7 @@
       "follow_symlinks": true,
       "name": "Resume: Meta",
       "path": "meta"
-    },{
+    }, {
       "follow_symlinks": true,
       "name": "Resume: Docs",
       "path": "docs"
