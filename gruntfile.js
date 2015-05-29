@@ -1,17 +1,18 @@
 //Gruntfile for the Resume Project
 
-var TITLE           = 'Biryujov Ilya – Front End Developer';      // Title
-var LANGUAGE        = 'ru';                                       // Language
-var BUILD_DIR       = 'build';                                    // Project Build
-var DEVELOPMENT_DIR = 'dev';                                      // Project Development
-var RESOURCES_DIR   = 'res';                                      // Resources (CSS, JavaScript, Fonts etc.)
-var INDEX_PAGE      = 'index.html';                               // Index Page
-var TEMPLATES_DIR   = 'templates';                                // Templates
-var CSS_TEMPLATE    = '_head.html';                               // Template Containing CSS Declarations
-var CSS_DIR         = 'css';                                      // Production CSS
-var SASS_DIR        = 'sass-dev';                                 // Sass
-var CSS_DEV_DIR     = 'css-dev';                                  // Generated CSS
-var CSS_FILENAME    = 'styles';                                   // Production CSS Filename
+var TITLE           = 'Biryujov Ilya – Front End Developer';  // Title
+var LANGUAGE        = 'ru';                                   // Language
+var BUILD_DIR       = 'build';                                // Project Build
+var DEVELOPMENT_DIR = 'dev';                                  // Project Development
+var RESOURCES_DIR   = 'res';                                  // Resources (CSS, JavaScript, Fonts etc.)
+var INDEX_PAGE      = 'index.html';                           // Index Page
+var TEMPLATES_DIR   = 'templates';                            // Templates
+var CSS_TEMPLATE    = '_head.html';                           // Template Containing CSS Declarations
+var CSS_DIR         = 'css';                                  // Production CSS
+var SASS_DIR        = 'sass-dev';                             // Sass
+var CSS_DEV_DIR     = 'css-dev';                              // Generated CSS
+var CSS_FILENAME    = 'styles';                               // Production CSS Filename
+var CSS_PRINT       = "print";                                // Print CSS Filename
 
 function fillAnArray(array, path) {
   var result = [];
@@ -41,7 +42,8 @@ module.exports = function(grunt) {
           dir: resourcesDirCompiled + CSS_DIR + '/',
           devDir: resourcesDirCompiled + CSS_DEV_DIR + '/',
           sass: resourcesDirCompiled + SASS_DIR + '/',
-          filename: CSS_FILENAME
+          filename: CSS_FILENAME,
+          print: CSS_PRINT
         }
       };
       this.build = {
@@ -170,6 +172,10 @@ module.exports = function(grunt) {
       css: {
         src: '<%= task.cssArray %>',
         dest: project.res.css.dir + project.res.css.filename + '.css'
+      },
+      print: {
+        src: project.res.css.devDir + project.res.css.print + ".css",
+        dest: project.res.css.dir + project.res.css.print + ".css"
       }
     },
 
@@ -441,7 +447,7 @@ module.exports = function(grunt) {
     var css = grunt.file.read(project.templates.css)
         .replace(/(.|\t|\s|\r?\n|\r)*?<!-- @tx-css -->/, '')
         .replace(/<!-- \/@tx-css -->(.|\t|\s|\r?\n|\r)*/, '')
-        .replace(/^\s(.)*tx\/tx-debug(.)*/gm, '')
+        .replace(/^\s(.)*print(.)*/gm, '')
         .replace(/<!--(.|\t|\s|\r?\n|\r)*/, '')
         .replace(cssDirRegEx, '')
         .replace(/\r?\n|\r/g, '')
@@ -449,13 +455,14 @@ module.exports = function(grunt) {
         .replace(/">$/, '');
     var cssArray = css.split('">');
     var cssExpected = cssArray.length;
-    var cssActual = grunt.file.expand([project.res.css.devDir + '*.css']).length;
+    var cssActual = grunt.file.expand([project.res.css.devDir + '*.css', "!" + project.res.css.devDir + project.res.css.print + ".css"]).length;
     if (cssExpected === cssActual || (cssArray[0] === '' && cssActual === 0)) {
       if (cssActual === 0) {
         grunt.log.writeln('No .css-files to process.');
       } else {
         var processTasks = [];
         processTasks.push('concat:css');
+        processTasks.push('concat:print');
         grunt.config.set('task.cssArray', fillAnArray(cssArray, project.res.css.devDir));
         processTasks = processTasks.concat(['uncss', 'csscomb', 'string-replace:cssComments', 'cssc', 'cssmin:cssMin']);
         grunt.task.run(processTasks);
@@ -473,7 +480,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('cssInline', 'Injecting CSS', function() {
     var cssRegEx = new RegExp('<(.)*' + project.res.css.filename + '.min.css(.)*>', 'g');
-    var css = '<style rel="stylesheet" type="text/css">' + grunt.file.read(project.res.css.dir + project.res.css.filename + '.min.css') + '</style>';
+    var css = '<style rel="stylesheet" type="text/css">' + grunt.file.read(project.res.css.dir + project.res.css.filename + '.min.css') + grunt.file.read(project.res.css.dir + project.res.css.print + ".min.css") + '</style>';
     var files = grunt.file.expand([project.build.dir + '*.html']);
     var filesLength = files.length;
     var fileIndex = 0;

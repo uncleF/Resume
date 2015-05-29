@@ -330,16 +330,6 @@ hr {
 
 
 
-/* Print Typography */
-
-@media print {
-
-  @import "print/typography-print";
-
-}
-
-
-
 /* TV Typography */
 
 @media projection, tv {}

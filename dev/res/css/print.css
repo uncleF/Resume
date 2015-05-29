@@ -1,0 +1,51 @@
+/* Print Layout */
+@media print {
+  /* Typography & Rhythm */
+  @page {
+    margin: 0;
+  }
+  html, body {
+    background: #ffffff;
+  }
+  body {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    color: #cccccc;
+    font-size: 12pt;
+    line-height: 18pt;
+  }
+  a {
+    color: #cccccc;
+    text-decoration: none;
+  }
+  a:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+  }
+  a:visited {
+    color: #cccccc;
+  }
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+  acronym, abbr, ins, del, var, input, select, textarea {
+    border: none; 
+    color: #cccccc;
+    text-decoration: none;
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+  blockquote, pre, img, tr {
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+}
