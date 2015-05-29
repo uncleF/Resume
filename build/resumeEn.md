@@ -1,14 +1,11 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 03/28/2015)
+Front End Developer (last revisited on 05/29/2015)
 
-E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
-
-Phone [+7 918 211-37-92](tel:+79182113792)
-
-Skype [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
-
-GitHub [uncleF](https://github.com/uncleF)
+*   E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
+*   Phone – [+7 918 211-37-92](tel:+79182113792)
+*   Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
+*   GitHub – [uncleF](https://github.com/uncleF)
 
 # Profile
 
@@ -62,17 +59,18 @@ Front end developer with a computer science degree, 8 years of experience and de
 
 # Past Employment
 
-## Freelance – March 2014 - Currently
+## FreelanceMarch 2014 - Currently
 
 ### Front End Developer & Consultant
 
 *   Developed multiple websites and applications.
+*   Worked as a volunteer for the [FBK (Anti-Corruption Foundation)](http://fbk.info/). Had to work on (extremly) tight schedule and find solutions for the complex, nontrivial problems.
 *   Built a Grunt-based template assembling tool for the proprietary landing page generator.
 *   Consulted multiple clients on front end performance and accessibility.
 
-## [Digital-agency Spider Group](http://spider.ru/en/) – February 2008 - March 2014
+## [Digital-agency Spider Group](http://spider.ru/en/)February 2008 - March 2014
 
-### Senior Front End Developer – January 2012 - March 2014
+### Senior Front End DeveloperJanuary 2012 - March 2014
 
 *   Developed multiple websites and applications. Including [high traffic e-commerce site](http://topliga.ru/).
 *   Developed user interface for the [e-commerce iOS app](https://itunes.apple.com/us/app/fingo.-furniture.-try-before/id567070760?mt=8) from scratch.
@@ -82,14 +80,14 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   Consulted co-workers and clients on all matters concerning front end development.
 *   Gained some experience in project management and native development for the iOS and Android.
 
-### Front End Developer – February 2008 - January 2012
+### Front End DeveloperFebruary 2008 - January 2012
 
 *   Developed multiple websites using several CMS developed in-house and out of the box (PHP, Python).
 *   Worked on [high traffic regional information portal](http://www.kuban.ru/).
 *   Participated in development of interfaces for the interactive expo booths.
 *   Created numerous marketing e-mail templates.
 
-## [Kuban Internet Company](http://kubic.ru/) – December 2006 - August 2007
+## [Kuban Internet Company](http://kubic.ru/)December 2006 - August 2007
 
 ### Front End Developer
 
@@ -97,7 +95,7 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   Developed multiple websites using an in-house CMS (Perl-based).
 *   Briefly worked on two hight traffic projects — [regional news portal](http://www.yuga.ru/) and [social networking site](http://www.diary.ru/).
 
-## Freelance – Before December 2006
+## FreelanceBefore December 2006
 
 ### Front End Developer
 
@@ -111,6 +109,8 @@ Front end developer with a computer science degree, 8 years of experience and de
 
 # Examples
 
+*   [https://dem-coalition.org/](https://dem-coalition.org/)
+*   [https://volonter.dem-coalition.org/](https://volonter.dem-coalition.org/)
 *   [http://kristall-komfort.ru/](http://kristall-komfort.ru/)
 *   [http://optrika.ru/](http://optrika.ru/)
 *   [http://www.domskala.ru/](http://www.domskala.ru/)
@@ -131,3 +131,7 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   [http://idisplay.spider.ru/](http://idisplay.spider.ru/)
 *   [http://www.arkhyz-jivitsa.ru/landing/](http://www.arkhyz-jivitsa.ru/landing/)
 *   [http://moscow.arkhyz-visma.ru/landing/](http://moscow.arkhyz-visma.ru/landing/)
+
+*   E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
+*   Phone – [+7 918 211-37-92](tel:+79182113792)
+*   Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)

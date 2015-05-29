@@ -1,14 +1,11 @@
 # Илья Бирюков
 
-Front End разработчик (последняя редакция 28.03.2015)
+Front End разработчик (последняя редакция 29.05.2015)
 
-E-mail [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
-
-Телефон [+7 918 211-37-92](tel:+79182113792)
-
-Skype [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
-
-GitHub [uncleF](https://github.com/uncleF)
+*   E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
+*   Телефон – [+7 918 211-37-92](tel:+79182113792)
+*   Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
+*   GitHub – [uncleF](https://github.com/uncleF)
 
 # О себе
 
@@ -62,17 +59,18 @@ Front end разработчик с дипломом факультета при
 
 # Предыдущие места работы
 
-## Фриланс – Март 2014 - По настоящее время
+## ФрилансМарт 2014 - По настоящее время
 
 ### Front end разработчик и консультант
 
 *   Разработал множество сайтов и веб-приложений.
+*   Работал волонтером на [ФБК](http://fbk.info/). Приходилось выполнять достаточно сложные, нетривиальные задачи в крайне сжатые сроки.
 *   Создал инструмент на основе Grunt для автоматической сборки шаблонов для пропроитарного генератора лэндингов.
 *   Консультировал клиентов по вопросам производительности и доступности front end'а.
 
-## [Digital-агентство Spider Group](http://spider.ru/) – Февраль 2008 - Март 2014
+## [Digital-агентство Spider Group](http://spider.ru/)Февраль 2008 - Март 2014
 
-### Старший front end разработчик — – Январь 2012 - Март 2014
+### Старший front end разработчик —Январь 2012 - Март 2014
 
 *   Разработал множество сайтов и веб-приложений. В том числе и [высоко нагруженный интернет-магазин](http://topliga.ru/).
 *   С нуля спроектировал интерфейс [коммерческого iOS-приложения](https://itunes.apple.com/us/app/fingo.-furniture.-try-before/id567070760?mt=8).
@@ -82,14 +80,14 @@ Front end разработчик с дипломом факультета при
 *   Консультировал коллег и клиентов по вопросам касающимся front end разработки.
 *   Получил опыт в управлении проектами и разработке native-приложений для iOS и Android.
 
-### Front end разработчик — – Февраль 2008 - Январь 2012
+### Front end разработчик —Февраль 2008 - Январь 2012
 
 *   Разработал множество сайтов и веб-приложений используя несколько CMS (на основе PHP и Python).
 *   Работал над [высоко нагруженным региональным информационным порталом](http://www.kuban.ru/).
 *   Участвовал в разработке интерфейсов интерактивных выставочных комплексов.
 *   Сверстал множество e-mail шаблонов.
 
-## [Кубанская Интернет Компания](http://kubic.ru/) – Декабрь 2006 - Август 2007
+## [Кубанская Интернет Компания](http://kubic.ru/)Декабрь 2006 - Август 2007
 
 ### Front end разработчик
 
@@ -97,7 +95,7 @@ Front end разработчик с дипломом факультета при
 *   Разработал множество сайтов используя проприетарную CMS (на основе Perl).
 *   Работал над двумя высоко нагруженными проектами — [региональным новостным порталом](http://www.yuga.ru/) и [социальной сетью](http://www.diary.ru/).
 
-## Freelance – До декабря 2006
+## FreelanceДо декабря 2006
 
 *   Front end разработчик
 *   Бессчетное число плохих сайтов на бесплатных хостингах...
@@ -108,6 +106,8 @@ Front end разработчик с дипломом факультета при
 
 # Примеры работ
 
+*   [https://dem-coalition.org/](https://dem-coalition.org/)
+*   [https://volonter.dem-coalition.org/](https://volonter.dem-coalition.org/)
 *   [http://kristall-komfort.ru/](http://kristall-komfort.ru/)
 *   [http://optrika.ru/](http://optrika.ru/)
 *   [http://www.domskala.ru/](http://www.domskala.ru/)
@@ -128,3 +128,7 @@ Front end разработчик с дипломом факультета при
 *   [http://idisplay.spider.ru/](http://idisplay.spider.ru/)
 *   [http://www.arkhyz-jivitsa.ru/landing/](http://www.arkhyz-jivitsa.ru/landing/)
 *   [http://moscow.arkhyz-visma.ru/landing/](http://moscow.arkhyz-visma.ru/landing/)
+
+*   E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
+*   Телефон – [+7 918 211-37-92](tel:+79182113792)
+*   Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)

@@ -1,5 +1,4 @@
-@import "tx/tx";
-@import "tx/tx-project";
+@import "project/project";
 
 
 
@@ -10,201 +9,242 @@
 /* Layout Base */
 
 html {
-	min-height: 100%;
-	-webkit-overflow-scrolling: touch;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
-	@include tx-scroll-bar(true);
-	position: relative;
-	margin: 0;
+  @include tx-set-boundaries($min-width);
+  @include tx-scroll-bar(true);
+  position: relative;
+  background: $background;
 }
 
 
 
 /* Content */
 
-.content,.headerContent, .footerContent {
-	width: $min-width;
-	margin: 0 auto;
+%contentStyle {
+  width: ($min-width - $gap * 2);
+  margin: 0 auto;
+  padding: 0 $gap;
 }
 
-.header, .footer {
-	$headerFooter-color: $white;
-	$headerFooter-backgroundStart: $green;
-	$headerFooter-backgroundEnd: $greenLight;
+.content {
+  @extend %contentStyle;
+}
 
-	color: $headerFooter-color;
-	background: $headerFooter-backgroundStart;
-	background: linear-gradient(30deg, $headerFooter-backgroundStart, $headerFooter-backgroundEnd);
+.resumeNote {
+  $resumeNote-color: $greenLightest;
 
-	a {
-		$hedaerFooter-link: $greenLightest;
+  color: $resumeNote-color;
+}
 
-		color: $hedaerFooter-link;
-	}
+.emplymentDate {
+  $emplymentDate-color: $grayLight;
 
-	.phoneLink {
-		$phoneLink-color: $white;
+  color: $emplymentDate-color;
+  white-space: nowrap;
+}
 
-		color: $phoneLink-color;
-		text-decoration: none;
-		cursor: default;
 
-		&:hover, &:active {
-			color: $phoneLink-color;
-		}
 
-	}
+/* Header */
+
+%headerFooterStyle {
+  $headerFooter-color: $white;
+  $headerFooter-backgroundStart: $green;
+  $headerFooter-backgroundEnd: $greenLight;
+
+  color: $headerFooter-color;
+  background: $headerFooter-backgroundStart;
+  background: linear-gradient(30deg, $headerFooter-backgroundStart, $headerFooter-backgroundEnd);
+
+  a {
+    $hedaerFooter-link: $greenLightest;
+    $hedaerFooterHover-link: $white;
+
+    color: $hedaerFooter-link;
+    text-decoration-color: rgba($hedaerFooter-link, $underlineOpacity);
+
+    &:visited {
+      color: $hedaerFooter-link;
+      text-decoration-color: rgba($hedaerFooter-link, $underlineOpacity);
+    }
+
+    &:hover, &:active {
+      color: $hedaerFooterHover-link;
+      text-decoration-color: rgba($hedaerFooterHover-link, $underlineOpacity);
+    }
+
+  }
+
+  .phoneLink {
+    $phoneLink-color: $white;
+
+    color: $phoneLink-color;
+    text-decoration: none;
+    cursor: default;
+
+    &:visited, &:hover, &:active {
+      color: $phoneLink-color;
+    }
+
+  }
 
 }
 
 .header {
-	@include tx-rhythm-padding(2, 2);
+  @extend %headerFooterStyle;
+  @include tx-rhythm-padding(2, 2);
 
-	h1 {
-		$headerHeader-fontSize: $font-size * 4;
-		$headerHeader-color: $white;
+  h1 {
+    $headerHeader-fontSize: $font-size * 4;
+    $headerHeader-color: $white;
 
-		@include tx-font-size($headerHeader-fontSize, 3);
-		margin: 0;
-		color: $headerHeader-color;
-		border: none;
-	}
+    @include tx-font-size($headerHeader-fontSize, 3);
+    margin: 0;
+    color: $headerHeader-color;
+    border: none;
+  }
 
 }
 
-.resumeNote {
-	$resumeNote-color: $greenLightest;
-
-	color: $resumeNote-color;
+.headerContent {
+  @extend %contentStyle;
 }
 
-.emplymentDate {
-	$emplymentDate-color: $grayLight;
 
-	color: $emplymentDate-color;
-	white-space: nowrap;
+
+/* Footer */
+
+.footer {
+  $footer-fontSize: $font-size * .85;
+
+  @extend %headerFooterStyle;
+  @include tx-rhythm(3, 0, $footer-fontSize);
+  @include tx-rhythm-padding(1, 1, $footer-fontSize);
+  @include tx-font-size($footer-fontSize, 1);
+  text-align: center;
+  white-space: nowrap;
 }
+
+.footerContent {
+  @extend %contentStyle;
+}
+
+
+
+/* Conatcts */
 
 .contacts {
 
-	dt, dd {
-		margin: 0;
-	}
+  dt, dd {
+    margin: 0;
+  }
 
-	dt {
-		float: left;
-		@include tx-rhythm(0, .25, $mrgt: .5em);
-		font-weight: normal;
-		clear: left;
+  dt {
+    float: left;
+    @include tx-rhythm(0, .25, $mrgt: .5em);
+    font-weight: normal;
+    clear: left;
 
-		&:after {
-			@include tx-pseudo(inline, relative, ":");
-		}
+    &:after {
+      @include tx-pseudo(inline, relative, ":");
+    }
 
-	}
+  }
 
-	dd {
-		@include tx-rhythm(0, .25);
-		font-style: normal;
-	}
+  dd {
+    @include tx-rhythm(0, .25);
+    font-style: normal;
+  }
 
-	.footer & {
-		@include tx-inline-block;
-		margin: 0;
+  .footer & {
+    @include tx-inline-block;
+    margin: 0;
 
-		dt, dd {
-			float: none;
-			@include tx-inline-block;
-		}
+    dt, dd {
+      float: none;
+      @include tx-inline-block;
+    }
 
-		dt {
-			margin: 0 .25em 0 1.5em;
-		}
+    dt {
+      margin: 0 .25em 0 1.5em;
+    }
 
-	}
+  }
 
 }
 
-.footer {
-	$footer-fontSize: $font-size * .85;
 
-	@include tx-rhythm(3, 0, $footer-fontSize);
-	@include tx-rhythm-padding(1, 1, $footer-fontSize);
-	@include tx-font-size($footer-fontSize, 1);
-	text-align: center;
-	white-space: nowrap;
+
+/* High DPI Layout */
+
+@media only screen and (min-resolution: 1.5dppx), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 150dpi) {}
+
+
+
+/* Large Resolution Layout */
+
+@media only screen and (min-width: 641px) {
+
+  .columns {
+    column-count: 2;
+
+    li {
+      margin: 0;
+      @include tx-rhythm-padding(.25, .25, $plft: 1.5em);
+      break-inside: avoid;
+
+      &:before {
+        margin: .35em 0 0;
+      }
+
+    }
+
+  }
+
 }
 
 
 
 /* Phone Layout */
 
-@media handheld, only screen and (max-width: 599px) {
+@media handheld, only screen and (max-width: 640px) {
 
-	.content, .headerContent, .footerContent {
-		width: auto;
-		padding: 0 $gap;
-	}
+  @import "phone/layout-phone";
 
-	.header, .footer {
-		$headerFooter-background: $green;
+}
 
-		background: $headerFooter-background;
-	}
+@media only screen and (max-width: 720px) and (min-resolution: 1.5dppx), only screen and (max-width: 720px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 720px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 720px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (max-width: 720px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 720px) and (min-resolution: 150dpi) {}
 
-	.emplymentDate {
-		display: block;
-		margin: .25em 0 0;
-		white-space: normal;
-	}
 
-	.contacts {
 
-		.footer & {
-			display: block;
-			margin: 0;
+/* Tablet Layout */
 
-			dt, dd {
-				display: block;
-			}
+@media only screen and (min-width: 721px) and (max-width: $min-width) {}
 
-			dt {
-				float: left;
-				margin: 0 .25em 0 0;
-			}
+@media only screen and (min-width: 721px) and (max-width: $min-width) and (min-resolution: 1.5dppx), only screen and (min-width: 721px) and (max-width: $min-width) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 721px) and (max-width: $min-width) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 721px) and (max-width: $min-width) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 721px) and (max-width: $min-width) and (min-device-pixel-ratio: 1.5), only screen and (min-width: 721px) and (max-width: $min-width) and (min-resolution: 150dpi) {}
 
-		}
 
-	}
 
-	.footer {
-		text-align: left;
-	}
+/* Print Layout */
+
+@media print {
+
+  @import "print/layout-print";
 
 }
 
 
 
-/* Large Screen Layout */
+/* TV Layout */
 
-@media handheld, only screen and (min-width: 600px) {
+@media projection, tv {}
 
-	.columns {
-		column-count: 2;
 
-		li {
-			margin: 0;
-			@include tx-rhythm-padding(.25, .25, $plft: 1.5em);
-			break-inside: avoid;
 
-			&:before {
-				margin: .35em 0 0;
-			}
+/* Audio Layout */
 
-		}
-
-	}
-
-}
+@media aural {}

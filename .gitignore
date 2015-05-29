@@ -3,7 +3,9 @@
 node_modules
 bower_components
 
+build
 design
+tests
 
 *.zip
 *.sublime-workspace
