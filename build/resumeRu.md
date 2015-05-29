@@ -2,10 +2,10 @@
 
 Front End разработчик (последняя редакция 29.05.2015)
 
-*   E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
-*   Телефон – [+7 918 211-37-92](tel:+79182113792)
-*   Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
-*   GitHub – [uncleF](https://github.com/uncleF)
+E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
+Телефон – [+7 918 211-37-92](tel:+79182113792)
+Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
+GitHub – [uncleF](https://github.com/uncleF)
 
 # О себе
 
@@ -129,6 +129,6 @@ Front end разработчик с дипломом факультета при
 *   [http://www.arkhyz-jivitsa.ru/landing/](http://www.arkhyz-jivitsa.ru/landing/)
 *   [http://moscow.arkhyz-visma.ru/landing/](http://moscow.arkhyz-visma.ru/landing/)
 
-*   E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
-*   Телефон – [+7 918 211-37-92](tel:+79182113792)
-*   Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
+E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
+Телефон – [+7 918 211-37-92](tel:+79182113792)
+Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)

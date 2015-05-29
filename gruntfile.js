@@ -256,7 +256,7 @@ module.exports = function(grunt) {
             replacement: ' – '
           }, {
             pattern: /<dt>/gi,
-            replacement: '*   '
+            replacement: ''
           }, {
             pattern: /<\/dd>(\r?\n|\r)+/gi,
             replacement: '\n'
