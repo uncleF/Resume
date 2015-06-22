@@ -1,6 +1,6 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 05/29/2015)
+Front End Developer (last revisited on 06/22/2015)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 
@@ -10,7 +10,7 @@ Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
 
 GitHub – [uncleF](https://github.com/uncleF)
 
-# Profile
+## Profile
 
 Front end developer with a computer science degree, 8 years of experience and deep understanding of modern development process and its challenges. Experienced in prototyping and developing user interfaces (sites, apps, emails, IPTV, interactive expo booths, etc.). Have some experience in project management and developing native apps for the iOS and Android. Obsessed with efficient development workflow, personal productivity and constant growth as front end developer.
 
@@ -21,7 +21,7 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   Staying on the bleeding edge of front end development.
 *   Conversational English
 
-## Areas of Expertise
+### Areas of Expertise
 
 *   Responsive Web Design
 *   Mobile Web Development
@@ -40,7 +40,7 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   Web Content Management
 *   Project Management
 
-## Skills
+### Skills
 
 *   HTML5, CSS3 (Sass), JavaScript (JQuery, Backbone.js, three.JS, etc.), SVG (Snap.svg, Raphael)
 *   Front end performance and accessibility audit (npm, RubyGems, standalone and web apps)
@@ -49,7 +49,7 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   PHP, SQL
 *   Java, Objective-C
 
-## Tools
+### Tools
 
 *   My own open [development tool](https://github.com/uncleF/TemplateX) (mini-framework) for rapid project workflow setup
 *   Sublime Text, Eclipse, Xcode, Android Studio
@@ -60,20 +60,20 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   Git, [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/)
 *   Wordpress, Drupal
 
-# Past Employment
+## Past Employment
 
-## FreelanceMarch 2014 - Currently
+### FreelanceMarch 2014 - Currently
 
-### Front End Developer & Consultant
+#### Front End Developer & Consultant
 
 *   Developed multiple websites and applications.
 *   Worked as a volunteer for the [FBK (Anti-Corruption Foundation)](http://fbk.info/). Had to work on (extremly) tight schedule and find solutions for the complex, nontrivial problems.
 *   Built a Grunt-based template assembling tool for the proprietary landing page generator.
 *   Consulted multiple clients on front end performance and accessibility.
 
-## [Digital-agency Spider Group](http://spider.ru/en/)February 2008 - March 2014
+### [Digital-agency Spider Group](http://spider.ru/en/)February 2008 - March 2014
 
-### Senior Front End DeveloperJanuary 2012 - March 2014
+#### Senior Front End DeveloperJanuary 2012 - March 2014
 
 *   Developed multiple websites and applications. Including [high traffic e-commerce site](http://topliga.ru/).
 *   Developed user interface for the [e-commerce iOS app](https://itunes.apple.com/us/app/fingo.-furniture.-try-before/id567070760?mt=8) from scratch.
@@ -83,34 +83,34 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   Consulted co-workers and clients on all matters concerning front end development.
 *   Gained some experience in project management and native development for the iOS and Android.
 
-### Front End DeveloperFebruary 2008 - January 2012
+#### Front End DeveloperFebruary 2008 - January 2012
 
 *   Developed multiple websites using several CMS developed in-house and out of the box (PHP, Python).
 *   Worked on [high traffic regional information portal](http://www.kuban.ru/).
 *   Participated in development of interfaces for the interactive expo booths.
 *   Created numerous marketing e-mail templates.
 
-## [Kuban Internet Company](http://kubic.ru/)December 2006 - August 2007
+### [Kuban Internet Company](http://kubic.ru/)December 2006 - August 2007
 
-### Front End Developer
+#### Front End Developer
 
 *   First professional steps as a fully employed front end developer.
 *   Developed multiple websites using an in-house CMS (Perl-based).
 *   Briefly worked on two hight traffic projects — [regional news portal](http://www.yuga.ru/) and [social networking site](http://www.diary.ru/).
 
-## FreelanceBefore December 2006
+### FreelanceBefore December 2006
 
-### Front End Developer
+#### Front End Developer
 
 *   String of awful sites build for friends.
 *   First attempts to earn some money.
 *   ...mistakes were made.
 
-# Education
+## Education
 
 5 years computer science degree from the [Kuban State University](http://www.kubsu.ru/en/).
 
-# Examples
+## Examples
 
 *   [https://dem-coalition.org/](https://dem-coalition.org/)
 *   [https://volonter.dem-coalition.org/](https://volonter.dem-coalition.org/)

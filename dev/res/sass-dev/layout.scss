@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  @include tx-set-boundaries($min-width);
+  @include tx-set-boundaries($min-width, 0);
   @include tx-scroll-bar(true);
   position: relative;
   background: $background;
@@ -26,8 +26,8 @@ body {
 
 %contentStyle {
   width: ($min-width - $gap * 2);
-  margin: 0 auto;
   padding: 0 $gap;
+  margin: 0 auto;
 }
 
 .content {
@@ -43,6 +43,7 @@ body {
 .emplymentDate {
   $emplymentDate-color: $grayLight;
 
+  display: block;
   color: $emplymentDate-color;
   white-space: nowrap;
 }
@@ -66,11 +67,6 @@ body {
 
     color: $hedaerFooter-link;
     text-decoration-color: rgba($hedaerFooter-link, $underlineOpacity);
-
-    &:visited {
-      color: $hedaerFooter-link;
-      text-decoration-color: rgba($hedaerFooter-link, $underlineOpacity);
-    }
 
     &:hover, &:active {
       color: $hedaerFooterHover-link;
@@ -97,17 +93,6 @@ body {
 .header {
   @extend %headerFooterStyle;
   @include tx-rhythm-padding(2, 2);
-
-  h1 {
-    $headerHeader-fontSize: $font-size * 4;
-    $headerHeader-color: $white;
-
-    @include tx-font-size($headerHeader-fontSize, 3);
-    margin: 0;
-    color: $headerHeader-color;
-    border: none;
-  }
-
 }
 
 .headerContent {
@@ -144,10 +129,10 @@ body {
   }
 
   dt {
-    float: left;
     @include tx-rhythm(0, .25, $mrgt: .5em);
-    font-weight: normal;
+    float: left;
     clear: left;
+    font-weight: normal;
 
     &:after {
       @include tx-pseudo(inline, relative, ":");
@@ -165,8 +150,8 @@ body {
     margin: 0;
 
     dt, dd {
-      float: none;
       @include tx-inline-block;
+      float: none;
     }
 
     dt {
@@ -182,30 +167,6 @@ body {
 /* High DPI Layout */
 
 @media only screen and (min-resolution: 1.5dppx), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 150dpi) {}
-
-
-
-/* Large Resolution Layout */
-
-@media only screen and (min-width: 641px) {
-
-  .columns {
-    column-count: 2;
-
-    li {
-      margin: 0;
-      @include tx-rhythm-padding(.25, .25, $plft: 1.5em);
-      break-inside: avoid;
-
-      &:before {
-        margin: .35em 0 0;
-      }
-
-    }
-
-  }
-
-}
 
 
 

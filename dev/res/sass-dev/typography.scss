@@ -67,36 +67,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  @include tx-rhythm(2, 1, $h1-fontSize);
-  @include tx-font-size($h1-fontSize, 2);
+  $header-color: $white;
+
+  @include tx-font-size($h1-fontSize, 3);
+  border: 0;
+  margin: 0;
+  color: $header-color;
 }
 
 h2 {
-  @include tx-rhythm(1, 1, $h2-fontSize);
+  @include tx-rhythm(2, 1, $h2-fontSize);
   @include tx-font-size($h2-fontSize, 2);
 }
 
 h3 {
-  @include tx-rhythm(1, 1, $h3-fontSize);
-  @include tx-font-size($h3-fontSize, 1);
+  @include tx-rhythm(2, 1, $h3-fontSize);
+  @include tx-font-size($h3-fontSize, 2);
 }
 
 h4 {
-  @include tx-rhythm(1, 1, $h4-fontSize);
-  @include tx-font-size($h4-fontSize, 1);
+  @include tx-rhythm(2, 1, $h4-fontSize);
+  @include tx-font-size($h4-fontSize, 2);
 }
 
 h5 {
-  @include tx-rhythm(1, 1, $h5-fontSize);
+  @include tx-rhythm(2, 1, $h5-fontSize);
   @include tx-font-size($h5-fontSize, 1);
 }
 
 h6 {
-  @include tx-rhythm(1, 1, $h6-fontSize);
+  @include tx-rhythm(2, 1, $h6-fontSize);
   @include tx-font-size($h6-fontSize, 1);
 }
 
-p, pre, dl, ul, ol, li, address, video, audio, table {
+p, pre, dl, ul, ol, address, video, audio, table {
   @include tx-rhythm(1, 1);
 }
 
@@ -160,6 +164,7 @@ ol {
 }
 
 li {
+  @include tx-rhythm(.5, .5);
 
   ul, ol {
     @include tx-rhythm(1, 1, $mlft: 1.5em);

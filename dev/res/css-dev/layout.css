@@ -11,7 +11,6 @@ body {
   -ms-overflow-style: -ms-autohiding-scrollbar;
   min-width: 640px;
   min-height: 100%;
-  max-width: 1400px;
   margin: 0 auto;
   background: #ffffff;
 }
@@ -19,7 +18,7 @@ body {
 /* Content */
 .content, .headerContent, .footerContent {
   width: 580px;
-  padding: 0 30px; 
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -28,6 +27,7 @@ body {
 }
 
 .emplymentDate {
+  display: block;
   color: #bebebe;
   white-space: nowrap;
 }
@@ -40,12 +40,6 @@ body {
   background: linear-gradient(30deg, #007236, #39b54a);
 }
 .header a, .footer a {
-  color: #6fe47f;
-  -webkit-text-decoration-color: rgba(111, 228, 127, .5);
-  -moz-text-decoration-color: rgba(111, 228, 127, .5);
-  text-decoration-color: rgba(111, 228, 127, .5);
-}
-.header a:visited, .footer a:visited {
   color: #6fe47f;
   -webkit-text-decoration-color: rgba(111, 228, 127, .5);
   -moz-text-decoration-color: rgba(111, 228, 127, .5);
@@ -69,13 +63,6 @@ body {
 .header {
   padding: 3em 0;
 }
-.header h1 {
-  border: none; 
-  margin: 0;
-  color: #ffffff;
-  font-size: 4em;
-  line-height: 1.125em;
-}
 
 /* Footer */
 .footer {
@@ -94,7 +81,7 @@ body {
 
 .contacts dt {
   float: left;
-  clear: left; 
+  clear: left;
   margin: 0 .5em .375em 0;
   font-weight: normal;
 }
@@ -114,7 +101,7 @@ body {
   margin: 0;
 }
 .footer .contacts dt, .footer .contacts dd {
-  display: inline-block; 
+  display: inline-block;
   float: none;
 }
 .footer .contacts dt {
@@ -122,26 +109,6 @@ body {
 }
 
 /* High DPI Layout */
-/* Large Resolution Layout */
-@media only screen and (min-width: 641px) {
-  .columns {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-  .columns li {
-    padding: .375em 0 .375em 1.5em;
-    margin: 0;
-    break-inside: avoid; 
-    page-break-inside: avoid;
-
-    -webkit-column-break-inside: avoid;
-  }
-  .columns li:before {
-    margin: .35em 0 0;
-  }
-}
-
 /* Phone Layout */
 @media handheld, only screen and (max-width: 640px) {
   /* Layout Base */
@@ -158,10 +125,6 @@ body {
     white-space: normal;
   }
   /* Header */
-  .header h1 {
-    font-size: 3em;
-    line-height: 1em;
-  }
   /* Footer */
   .footer {
     text-align: left;

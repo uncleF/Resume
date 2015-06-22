@@ -1,6 +1,6 @@
 //Gruntfile for the Resume Project
 
-var TITLE           = 'Biryujov Ilya – Front End Developer';  // Title
+var TITLE           = 'Biryukov Ilya – Front End Developer';  // Title
 var LANGUAGE        = 'ru';                                   // Language
 var BUILD_DIR       = 'build';                                // Project Build
 var DEVELOPMENT_DIR = 'dev';                                  // Project Development
@@ -75,8 +75,8 @@ module.exports = function(grunt) {
       }
     },
     csslint: {
-      option: {
-        'csslintrc': '.csslintrc'
+      options: {
+        csslintrc: '.csslintrc'
       },
       cssLint: {
         cwd: project.res.css.devDir,
@@ -86,6 +86,7 @@ module.exports = function(grunt) {
     },
     csscss: {
       options: {
+        shorthand: false,
         verbose: true
       },
       csscssTest: {
@@ -301,7 +302,7 @@ module.exports = function(grunt) {
     uncss: {
       cssOptimize: {
         options: {
-          ignore: [/.*-is-.*/, /.*-has-.*/, /.*-are-.*/, /js-.*/],
+          ignore: [/.*-is-.*/, /.*-has-.*/, /.*-are-.*/, /mdz-.*/, /js-.*/],
           stylesheets: [project.res.css.dir.replace(project.dir, '') + project.res.css.filename + '.css'],
           timeout: 1000
         },
@@ -431,7 +432,7 @@ module.exports = function(grunt) {
         logConcurrentOutput: true,
         limit: 3
       },
-      projectWatch: ['watch:htmlTemplates', 'watch:sass', 'watch:sassImages', 'watch:livereloadWatch']
+      projectWatch: ['watch:htmlTemplates', 'watch:sass', 'watch:livereloadWatch']
     },
     wait: {
       options: {
@@ -490,7 +491,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('quality', ['htmlhint', 'jscs', 'jshint', 'jsinspect', 'scsslint', 'csslint', 'csscss', 'colorguard', 'arialinter']);
+  grunt.registerTask('quality', ['htmlhint', 'scsslint', 'csslint', 'csscss', 'colorguard', 'arialinter']);
 
   grunt.registerTask('test', ['backstop']);
 

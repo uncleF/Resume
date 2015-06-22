@@ -27,16 +27,13 @@
   a:visited {
     color: #cccccc;
   }
-  a[href^="javascript:"]:after, a[href^="#"]:after {
+  [href^="javascript:"]:after, [href^="#"]:after {
     content: "";
   }
   acronym, abbr, ins, del, var, input, select, textarea {
-    border: none; 
+    border: 0;
     color: #cccccc;
     text-decoration: none;
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
   }
   p {
     orphans: 3;
@@ -44,6 +41,9 @@
   }
   blockquote, pre, img, tr {
     page-break-inside: avoid;
+  }
+  [title]:after {
+    content: " (" attr(title) ")";
   }
   thead {
     display: table-header-group;

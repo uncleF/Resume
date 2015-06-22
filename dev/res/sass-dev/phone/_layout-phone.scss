@@ -25,16 +25,6 @@ body {
 
 /* Header */
 
-.header {
-
-  h1 {
-    $headerHeaderPhone-fontSize: $font-size * 3;
-
-    @include tx-font-size($headerHeaderPhone-fontSize, 2);
-  }
-
-}
-
 .headerContent {
   @extend %contentStylePhone;
 }

@@ -43,28 +43,29 @@
       color: $print-color;
     }
 
-    &[href^="javascript:"], &[href^="#"] {
+  }
 
-      &:after {
-        content: "";
-      }
+  %javascriptHREFStyle {
 
+    &:after {
+      content: "";
     }
 
+  }
+
+  [href^="javascript:"] {
+    @extend %javascriptHREFStyle;
+  }
+
+
+  [href^="#"] {
+    @extend %javascriptHREFStyle;
   }
 
   acronym, abbr, ins, del, var, input, select, textarea {
+    border: 0;
     color: $print-color;
     text-decoration: none;
-    border: none;
-  }
-
-  abbr[title] {
-
-    &:after {
-      content: " (" attr(title) ")";
-    }
-
   }
 
   p {
@@ -74,6 +75,14 @@
 
   blockquote, pre, img, tr {
     page-break-inside: avoid;
+  }
+
+  [title] {
+
+    &:after {
+      content: " (" attr(title) ")";
+    }
+
   }
 
   thead {
