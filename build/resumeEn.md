@@ -1,6 +1,6 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 06/22/2015)
+Front End Developer (last revisited on 08/08/2015)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 
@@ -42,7 +42,7 @@ Front end developer with a computer science degree, 8 years of experience and de
 
 ### Skills
 
-*   HTML5, CSS3 (Sass), JavaScript (JQuery, Backbone.js, three.JS, etc.), SVG (Snap.svg, Raphael)
+*   HTML5, CSS3 (Sass), JavaScript (JQuery, Backbone.js, Three.js, etc.), SVG (Snap.svg, Raphael)
 *   Front end performance and accessibility audit (npm, RubyGems, standalone and web apps)
 *   Node.js (npm, Grunt, Bower), XML
 *   Unity

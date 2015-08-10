@@ -1,6 +1,6 @@
 # Илья Бирюков
 
-Front end разработчик (последняя редакция 22.06.2015)
+Front end разработчик (последняя редакция 08.08.2015)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
 
@@ -42,7 +42,7 @@ Front end разработчик с дипломом факультета при
 
 ### Навыки
 
-*   HTML5, CSS3 (Sass), JavaScript (JQuery, Backbone.js, three.JS, etc.), SVG (Snap.svg, Raphael)
+*   HTML5, CSS3 (Sass), JavaScript (JQuery, Backbone.js, Three.js, etc.), SVG (Snap.svg, Raphael)
 *   Аудит производительности и доступности сайтов и веб-приложений (npm, RubyGems, веб-приложения и пр.)
 *   Node.js (npm, Grunt, Bower), XML
 *   Unity
