@@ -1,6 +1,6 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 09/25/2015)
+Front End Developer (last revisited on 12/18/2015)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 

@@ -3,7 +3,7 @@
   "devDependencies" : {
     "grunt": "~0.4.5",
     "load-grunt-tasks": "*",
-    "grunt-htmlhint": "*",
+    "grunt-htmlhint": "0.9.12",
     "grunt-scss-lint": "*",
     "grunt-contrib-csslint": "*",
     "grunt-csscss": "*",
