@@ -1,0 +1,158 @@
+/* Layout Base */
+
+html {
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  $body-minWidth: ($desktop-min - $gap * 2);
+
+  @include tx-set-boundaries($body-minWidth);
+  @include tx-scroll-bar(true);
+  position: relative;
+  padding: 0;
+  background: $background;
+}
+
+
+
+/* Content */
+
+%contentStyle {
+  width: ($desktop-min - $gap * 2);
+  padding: 0 $gap;
+  margin: 0 auto;
+}
+
+.content {
+  @extend %contentStyle;
+}
+
+.resumeNote {
+  $resumeNote-color: $greenLightest;
+
+  color: $resumeNote-color;
+}
+
+.emplymentDate {
+  $emplymentDate-color: $grayLight;
+
+  display: block;
+  color: $emplymentDate-color;
+  white-space: nowrap;
+}
+
+
+
+/* Header */
+
+%headerFooterStyle {
+  $headerFooter-color: $white;
+  $headerFooter-backgroundStart: $green;
+  $headerFooter-backgroundEnd: $greenLight;
+
+  color: $headerFooter-color;
+  background: $headerFooter-backgroundStart;
+  background: linear-gradient(30deg, $headerFooter-backgroundStart, $headerFooter-backgroundEnd);
+
+  a {
+    $hedaerFooter-link: $greenLightest;
+    $hedaerFooterHover-link: $white;
+
+    color: $hedaerFooter-link;
+    text-decoration-color: rgba($hedaerFooter-link, $underlineOpacity);
+
+    &:hover, &:active {
+      color: $hedaerFooterHover-link;
+      text-decoration-color: rgba($hedaerFooterHover-link, $underlineOpacity);
+    }
+
+  }
+
+  .phoneLink {
+    $phoneLink-color: $white;
+
+    color: $phoneLink-color;
+    text-decoration: none;
+    cursor: default;
+
+    &:visited, &:hover, &:active {
+      color: $phoneLink-color;
+    }
+
+  }
+
+}
+
+.header {
+  @extend %headerFooterStyle;
+  @include tx-rhythm-padding(2, 2);
+}
+
+.headerContent {
+  @extend %contentStyle;
+}
+
+
+
+/* Footer */
+
+.footer {
+  $footer-fontSize: $fontSize * .85;
+
+  @extend %headerFooterStyle;
+  @include tx-rhythm(3, 0, $footer-fontSize);
+  @include tx-rhythm-padding(1, 1, $footer-fontSize);
+  @include tx-font-size($footer-fontSize, 1);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.footerContent {
+  @extend %contentStyle;
+}
+
+
+
+/* Conatcts */
+
+.contacts {
+
+  dt, dd {
+    margin: 0;
+  }
+
+  dt {
+    @include tx-rhythm(0, .25, $mrgt: .5em);
+    float: left;
+    clear: left;
+    font-weight: normal;
+
+    &:after {
+      @include tx-pseudo(inline, relative, ":");
+    }
+
+  }
+
+  dd {
+    @include tx-rhythm(0, .25);
+    font-style: normal;
+  }
+
+  .footer & {
+    @include tx-inline-block;
+    margin: 0;
+
+    dt, dd {
+      @include tx-inline-block;
+      float: none;
+    }
+
+    dt {
+      margin: 0 .25em 0 1.5em;
+    }
+
+  }
+
+}

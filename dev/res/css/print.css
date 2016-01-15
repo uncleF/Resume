@@ -1,51 +1,46 @@
-/* Print Layout */
 @media print {
   /* Typography & Rhythm */
   @page {
-    margin: 0;
-  }
+    size: A4;
+    margin: .5cm; }
   html, body {
-    background: #ffffff;
-  }
+    background: #fff; }
   body {
-    width: 100%;
-    max-width: none;
-    padding: 0;
-    margin: 0;
-    color: #cccccc;
+    color: #333;
     font-size: 12pt;
-    line-height: 18pt;
-  }
-  a {
-    color: #cccccc;
-    text-decoration: none;
-  }
-  a:after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-  }
-  a:visited {
-    color: #cccccc;
-  }
-  [href^="javascript:"]:after, [href^="#"]:after {
-    content: "";
-  }
-  acronym, abbr, ins, del, var, input, select, textarea {
+    line-height: 1.5; }
+  pre, code, var, acronym, abbr, ins, del, input, select, textarea {
     border: 0;
-    color: #cccccc;
-    text-decoration: none;
-  }
+    color: #333;
+    text-decoration: none; }
   p {
     orphans: 3;
-    widows: 3;
-  }
-  blockquote, pre, img, tr {
+    widows: 3; }
+  blockquote, img, tr, table {
     page-break-inside: avoid;
-  }
-  [title]:after {
-    content: " (" attr(title) ")";
-  }
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid; }
   thead {
-    display: table-header-group;
-  }
-}
+    display: table-header-group; }
+  form {
+    display: none; }
+  [title]:after {
+    content: " (" attr(title) ")"; }
+  /* Layout Base */
+  body {
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    padding: 2.54cm; }
+  /* Links */
+  a[href^='javascript:']:after, a[href^='#']:after, a[href^='mailto:']:after, a[href^='tel:']:after {
+    content: ''; }
+  a {
+    color: #333;
+    text-decoration: none; }
+    a:after {
+      content: " (" attr(href) ")";
+      font-size: 90%; }
+    a:visited {
+      color: #333; } }
+/*# sourceMappingURL=print.css.map */

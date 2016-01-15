@@ -13,7 +13,7 @@
   "floats": "warning",
   "font-faces": "warning",
   "font-sizes": false,
-  "gradients": false,
+  "gradients": "warning",
   "ids": "warning",
   "import": "warning",
   "important": "warning",

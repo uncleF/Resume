@@ -1,55 +1,56 @@
-//Gruntfile for the Resume Project
+// Gruntfile for the Resume Project
 
-var TITLE           = 'Biryukov Ilya – Front End Developer';  // Title
-var LANGUAGE        = 'ru';                                   // Language
-var BUILD_DIR       = 'build';                                // Project Build
-var DEVELOPMENT_DIR = 'dev';                                  // Project Development
-var RESOURCES_DIR   = 'res';                                  // Resources (CSS, JavaScript, Fonts etc.)
-var INDEX_PAGE      = 'index.html';                           // Index Page
-var TEMPLATES_DIR   = 'templates';                            // Templates
-var CSS_TEMPLATE    = '_head.html';                           // Template Containing CSS Declarations
-var CSS_DIR         = 'css';                                  // Production CSS
-var SASS_DIR        = 'sass-dev';                             // Sass
-var CSS_DEV_DIR     = 'css-dev';                              // Generated CSS
-var CSS_FILENAME    = 'styles';                               // Production CSS Filename
-var CSS_PRINT       = "print";                                // Print CSS Filename
+var PROJECT           = 'Biryukov Ilya – Front End Developer';   // Project Name
 
-function fillAnArray(array, path) {
-  var result = [];
-  for (var element in array) {
-    result.push(path + array[element]);
-  }
-  return result;
-}
+var DEVELOPMENT_DIR   = 'dev';                                   // Development
+var BUILD_DIR         = 'build';                                 // Build
+var IMAGES_DIR        = 'images';                                // Content Images
+var RESOURCES_DIR     = 'res';                                   // Resources (CSS, JavaScript, Fonts, etc.)
+var TEMPLATES_DIR     = 'templates';                             // Templates
+var COMPONENTS_DIR    = 'components';                            // Components
+
+var CSS_IMAGES_DIR    = 'images';                                // CSS Images (Sprites, Icons, etc.)
+var SPRITES           = [];                                      // CSS Images to Compile into Separate Sprite Sheets
+var DATA_URI          = [];                                      // CSS Images to Convert to DataURI
+
+var SASS_DIR          = 'sass';                                  // Sass
+var CSS_DIR           = 'css';                                   // CSS
+var CSS_FILENAME      = 'styles';                                // CSS Filename
+var CSS_PRINT         = 'print';                                 // CSS Filename
 
 module.exports = function(grunt) {
 
   var project = {
     init: function() {
-      this.title = TITLE;
-      this.index = INDEX_PAGE;
-      this.language = LANGUAGE;
-      this.dir = DEVELOPMENT_DIR + '/';
-      var templatesDirCompiled = this.dir + TEMPLATES_DIR + '/';
-      var resourcesDirCompiled = this.dir + RESOURCES_DIR + '/';
-      this.templates = {
-        dir: templatesDirCompiled,
-        css: templatesDirCompiled + CSS_TEMPLATE
-      };
-      this.res = {
-        dir: resourcesDirCompiled,
-        css: {
-          dir: resourcesDirCompiled + CSS_DIR + '/',
-          devDir: resourcesDirCompiled + CSS_DEV_DIR + '/',
-          sass: resourcesDirCompiled + SASS_DIR + '/',
-          filename: CSS_FILENAME,
-          print: CSS_PRINT
+      var developmentDirCompiled = DEVELOPMENT_DIR + '/';
+      var resourcesDirCompiled = developmentDirCompiled + RESOURCES_DIR + '/';
+      var config = {
+        name: PROJECT,
+        dir: developmentDirCompiled,
+        images: developmentDirCompiled + IMAGES_DIR + '/',
+        res: {
+          dir: resourcesDirCompiled,
+          templates: {
+            dir: resourcesDirCompiled + TEMPLATES_DIR + '/',
+            comp: resourcesDirCompiled + TEMPLATES_DIR + '/' + COMPONENTS_DIR + '/'
+          },
+          images: {
+            dir: resourcesDirCompiled + CSS_IMAGES_DIR + '/',
+            sprites: SPRITES,
+            dataURI: DATA_URI
+          },
+          css: {
+            dir: resourcesDirCompiled + CSS_DIR + '/',
+            sass: resourcesDirCompiled + SASS_DIR + '/',
+            filename: CSS_FILENAME,
+            print: CSS_PRINT
+          }
+        },
+        build: {
+          dir: BUILD_DIR + '/'
         }
       };
-      this.build = {
-        dir: BUILD_DIR + '/'
-      };
-      return this;
+      return config;
     }
   }.init();
 
@@ -70,7 +71,7 @@ module.exports = function(grunt) {
     scsslint: {
       scssLint: {
         cwd: project.res.css.sass,
-        src: ['*.scss'],
+        src: ['**/*.{scss,sass}'],
         expand: true
       }
     },
@@ -79,7 +80,7 @@ module.exports = function(grunt) {
         csslintrc: '.csslintrc'
       },
       cssLint: {
-        cwd: project.res.css.devDir,
+        cwd: project.res.css.dir,
         src: ['*.css', '!*-IE.css'],
         expand: true
       }
@@ -90,47 +91,15 @@ module.exports = function(grunt) {
         verbose: true
       },
       csscssTest: {
-        src: project.res.css.devDir + '*.css'
+        cwd: project.res.css.dir,
+        src: ['*.css'],
+        expand: true
       }
     },
     colorguard: {
       files: {
-        src: project.res.css.devDir + '*.css'
-      }
-    },
-    arialinter: {
-      options: {
-        level: 'A'
-      },
-      ariaLinter: {
-        cwd: project.build.dir,
-        src: ['*.html'],
-        expand: true
-      }
-    },
-
-    backstop: {
-      test: {
-        options: {
-          backstop_path: './node_modules/backstopjs',
-          test_path: './tests',
-          setup: false,
-          configure: false,
-          create_references: false,
-          run_tests: true
-        }
-      }
-    },
-
-    analyzecss: {
-      options: {
-        outputMetrics: 'error',
-        softFail: true,
-        thresholds: grunt.file.readJSON('.analyzecssrc')
-      },
-      ananlyzeCSS: {
         cwd: project.res.css.dir,
-        src: [project.res.css.filename + '.min.css'],
+        src: ['*.css'],
         expand: true
       }
     },
@@ -142,15 +111,8 @@ module.exports = function(grunt) {
       },
       generateCSS: {
         cwd: project.res.css.sass,
-        src: ['*.scss', '*.sass'],
-        dest: project.res.css.devDir,
-        ext: '.css',
-        expand: true
-      },
-      generateDebugCSS: {
-        cwd: project.res.css.sass + 'project/tx/',
-        src: ['*.scss', '*.sass'],
-        dest: project.res.css.devDir + '/tx',
+        src: ['**/*.{scss,sass}'],
+        dest: project.res.css.dir,
         ext: '.css',
         expand: true
       }
@@ -162,65 +124,29 @@ module.exports = function(grunt) {
         cascade: false
       },
       prefixCSS: {
-        cwd: project.res.css.devDir,
-        src: ['**/*.css', '!**/*-IE.css'],
-        dest: project.res.css.devDir,
+        cwd: project.res.css.dir,
+        src: ['*.css', '!*-IE.css'],
+        dest: project.res.css.dir,
         expand: true
       }
     },
 
     concat: {
-      css: {
-        src: '<%= task.cssArray %>',
-        dest: project.res.css.dir + project.res.css.filename + '.css'
-      },
-      print: {
-        src: project.res.css.devDir + project.res.css.print + ".css",
-        dest: project.res.css.dir + project.res.css.print + ".css"
+      datauri: {
+        options: {
+          separator: '\n\n'
+        },
+        src: [project.res.css.sass + 'project/tx/_tx-projectImages-base64.scss', project.res.css.sass + 'project/tx/_tx-projectImages-IE.scss'],
+        dest: project.res.css.sass + 'project/_project-images.scss'
       }
     },
 
     'string-replace': {
-      cssComments: {
-        options: {
-          replacements: [{
-            pattern: /\/\* line \d*, .* \*\/(\r?\n|\r)*/g,
-            replacement: ''
-          }, {
-            pattern: /\/\*# sourceMappingURL(.|\t|\s|\r?\n|\r)*?\*\//gi,
-            replacement: ''
-          }, {
-            pattern: /.media \-sass\-debug\-info(.|\t|\s|\r?\n|\r)*?\}\}/gi,
-            replacement: ''
-          }, {
-            pattern: /\/\*\*\* uncss>.*\*\*\*\/(\r?\n|\r)*/g,
-            replacement: ''
-          }, {
-            pattern: /\*\s(.)*\*\/(\r?\n|\r)*$/g,
-            replacement: ''
-          }, {
-            pattern: /\*\s(.)*\*\/(\r?\n\t*|\r\t*)*\//g,
-            replacement: ''
-          }, {
-            pattern: /(\r?\n|\r)*\/$/g,
-            replacement: ''
-          }, {
-            pattern: /\/\*(.)*(\r?\n|\r){4}/g,
-            replacement: ''
-          }]
-        },
-        files: {
-          './': [project.res.css.dir + '*.css']
-        }
-      },
       build: {
         options: {
           replacements: [{
             pattern: /@tx-title/gi,
-            replacement: project.title
-          }, {
-            pattern: /@tx-language/gi,
-            replacement: project.language
+            replacement: project.name
           }, {
             pattern: /@tx-revisionDateRu/gi,
             replacement: {
@@ -248,8 +174,17 @@ module.exports = function(grunt) {
               }
             }.getDateEn()
           }, {
-            pattern: /.!-- @tx-css -->(.|\t|\s|\r?\n|\r)*?!-- \/@tx-css -->/gi,
-            replacement: '<link rel="stylesheet" type="text/css" href="' + project.res.css.dir.replace(project.dir, '') + project.res.css.filename + '.min.css">'
+            pattern: /(?:<span data-dev-note=".*?">)(.*)(?:<\/span>)/gi,
+            replacement: '$1'
+          }, {
+            pattern: /\sdata-dev-note=".*?"/gi,
+            replacement: ''
+          }, {
+            pattern: new RegExp(project.res.css.dir.replace(project.dir, '') + project.res.css.filename + '.css', 'gi'),
+            replacement: project.res.css.dir.replace(project.dir, '') + project.res.css.filename + '.min.css'
+          }, {
+            pattern: new RegExp(project.res.css.dir.replace(project.dir, '') + project.res.css.print + '.css', 'gi'),
+            replacement: project.res.css.dir.replace(project.dir, '') + project.res.css.print + '.min.css'
           }]
         },
         files: {
@@ -296,6 +231,44 @@ module.exports = function(grunt) {
         files: {
           './': [project.build.dir + '*.md']
         }
+      },
+      cssComments: {
+        options: {
+          replacements: [{
+            pattern: /\/\* line \d*, .* \*\/(?:\r?\n|\r)*/g,
+            replacement: ''
+          }, {
+            pattern: /\/\*# sourceMappingURL(?:.|\t|\s|\r?\n|\r)*?\*\//gi,
+            replacement: ''
+          }, {
+            pattern: /.media \-sass\-debug\-info(?:.|\t|\s|\r?\n|\r)*?\}\}/gi,
+            replacement: ''
+          }, {
+            pattern: /\/\*\*\* uncss>.*\*\*\*\/(?:\r?\n|\r)*/g,
+            replacement: ''
+          }, {
+            pattern: /\*\s(?:.)*\*\/(?:\r?\n|\r)*$/g,
+            replacement: ''
+          }, {
+            pattern: /\*\s(?:.)*\*\/(?:\r?\n\t*|\r\t*)*\//g,
+            replacement: ''
+          }, {
+            pattern: /(?:\r?\n|\r)*\/$/g,
+            replacement: ''
+          }, {
+            pattern: /\/\*(?:.)*(?:\r?\n|\r){4}/g,
+            replacement: ''
+          }, {
+            pattern: /\{(?:\r?\n|\r)\s*\/\*/g,
+            replacement: '{\n\n  /*'
+          }, {
+            pattern: /\}(?:\r?\n|\r)\}/g,
+            replacement: '}\n\n}'
+          }]
+        },
+        files: {
+          './': [project.res.css.dir + '*.css', '!' + project.res.css.dir + '*.min.css']
+        }
       }
     },
 
@@ -303,7 +276,6 @@ module.exports = function(grunt) {
       cssOptimize: {
         options: {
           ignore: [/.*-is-.*/, /.*-has-.*/, /.*-are-.*/, /mdz-.*/, /js-.*/],
-          stylesheets: [project.res.css.dir.replace(project.dir, '') + project.res.css.filename + '.css'],
           timeout: 1000
         },
         files: {
@@ -313,23 +285,6 @@ module.exports = function(grunt) {
             return cssMinFilesObject;
           }
         }.cssMinFiles()
-      }
-    },
-    csscomb: {
-      options: {
-        config: '.csscombrc'
-      },
-      cssSortBuild: {
-        cwd: project.res.css.dir,
-        src: ['*.css'],
-        dest: project.res.css.dir,
-        expand: true
-      },
-      cssSortDev: {
-        cwd: project.res.css.devDir,
-        src: ['*.css'],
-        dest: project.res.css.devDir,
-        expand: true
       }
     },
     cssc: {
@@ -353,15 +308,14 @@ module.exports = function(grunt) {
 
     processhtml: {
       options: {
-        includeBase: project.templates.dir,
+        includeBase: project.res.templates.comp,
         commentMarker: '@tx-process',
         recursive: true
       },
       templates: {
-        cwd: project.templates.dir,
-        src: ['*.html', '!_*.html'],
+        cwd: project.res.templates.dir,
+        src: ['*.html'],
         dest: project.dir,
-        ext: '.html',
         expand: true
       }
     },
@@ -374,6 +328,119 @@ module.exports = function(grunt) {
         expand: true
       }
     },
+    prettify: {
+      options: {
+        config: '.jsbeautifyrc'
+      },
+      formatBuild: {
+        cwd: project.build.dir,
+        src: ['*.html'],
+        dest: project.build.dir,
+        expand: true
+      }
+    },
+
+    sprite: {
+      checkSprites: function() {
+        var tasks = {};
+        var spritePath = project.res.images.dir;
+        var imgPath = '../' + spritePath.replace(project.res.dir, '');
+        project.res.images.sprites.forEach(function(sprite) {
+          var name = sprite.split('.')[0];
+          var ext = sprite.split('.')[1];
+          if (grunt.file.exists(spritePath + name + '/')) {
+            tasks[name] = {
+              src: spritePath + name + '/*.' + ext,
+              dest: spritePath + sprite,
+              destCss: project.res.css.sass + 'project/tx/_' + name + '.scss',
+              imgPath: imgPath + sprite,
+              padding: 5,
+              cssSpritesheetName: 'ssh-' + name,
+              cssVarMap: function(sprite) {
+                sprite.name = 'spt-' + sprite.name;
+              },
+              cssOpts: {
+                functions: false,
+                variableNameTransforms: []
+              }
+            };
+          }
+          if (grunt.file.exists(spritePath + name + '@2x/')) {
+            tasks[name + '2x'] = {
+              src: spritePath + name + '@2x/*@2x.' + ext,
+              dest: spritePath + (name + '@2x.' + ext),
+              destCss: project.res.css.sass + 'project/tx/_' + name + '@2x.scss',
+              imgPath: imgPath + name + '@2x.' + ext,
+              padding: 10,
+              cssSpritesheetName: 'ssh-' + name + '-2x',
+              cssVarMap: function(sprite) {
+                sprite.name = 'spt-' + sprite.name;
+              },
+              cssOpts: {
+                functions: false,
+                variableNameTransforms: []
+              }
+            };
+          }
+          if (grunt.file.exists(spritePath + name + '@3x/')) {
+            tasks[name + '3x'] = {
+              src: spritePath + name + '@3x/*@3x.' + ext,
+              dest: spritePath + (name + '@3x.' + ext),
+              destCss: project.res.css.sass + 'project/tx/_' + name + '@3x.scss',
+              imgPath: imgPath + name + '@3x.' + ext,
+              padding: 15,
+              cssSpritesheetName: 'ssh-' + name + '-3x',
+              cssVarMap: function(sprite) {
+                sprite.name = 'spt-' + sprite.name;
+              },
+              cssOpts: {
+                functions: false,
+                variableNameTransforms: []
+              }
+            };
+          }
+        });
+        return tasks;
+      }
+    }.checkSprites(),
+    datauri: {
+      options: {
+        classPrefix: 'image-'
+      },
+      resImages: {
+        checkDataURI: function() {
+          var config = {
+            src: [],
+            dest: project.res.css.sass + 'project/tx/_tx-projectImages-base64.scss'
+          };
+          for (var element in project.res.images.dataURI) {
+            config.src.push(project.res.images.dir + project.res.images.dataURI[element]);
+          }
+          return config;
+        }
+      }.checkDataURI()
+    },
+    imagemin: {
+      images: {
+        cwd: project.dir,
+        src: ['**/*.{png,jpg,gif}', '!**/tx-*.*', '!**/tx/*.*'],
+        dest: project.dir,
+        expand: true
+      }
+    },
+    svgmin: {
+      options: {
+        plugins: [{
+          removeViewBox: false
+        }]
+      },
+      images: {
+        cwd: project.dir,
+        src: ['**/*.svg', '!**/fonts/**/*.svg', '!**/tx-*.*', '!**/tx/*.*'],
+        dest: project.dir,
+        expand: true
+      }
+    },
 
     clean: {
       res: [project.res.css.dir],
@@ -383,8 +450,20 @@ module.exports = function(grunt) {
     copy: {
       build: {
         cwd: project.dir,
-        src: ['**/*.*', '!**/tx-*.*', '!**/templates/**', '!**/**-dev/**', '!**/tx/**'],
+        src: ['**/*.*', '!**/templates/**', '!**/sass/**', '!**/*.map', '!**/**-dev/**', '!**/tx-*.*', '!**/tx/**'],
         dest: project.build.dir,
+        expand: true
+      }
+    },
+    compress: {
+      build: {
+        options: {
+          mode: 'zip',
+          archive: project.name + '.build.zip'
+        },
+        cwd: project.build.dir,
+        src: ['**'],
+        dest: '.',
         expand: true
       }
     },
@@ -412,27 +491,31 @@ module.exports = function(grunt) {
       options: {
         spawn: false
       },
-      htmlTemplates: {
-        files: [project.templates.dir + '*.html'],
+      html: {
+        files: [project.res.templates.dir + '**/*.html', project.res.templates.dir + '!**/* copy.html', project.res.templates.dir + '!**/* - Copy.html'],
         tasks: ['processhtml']
       },
+      images: {
+        files: [project.res.images.dir + '**/*.{png,jpg,gif,svg}'],
+        tasks: ['sass', 'autoprefixer', 'processhtml']
+      },
       sass: {
-        files: [project.res.css.sass + '**/*.scss', project.res.css.sass + '**/*.sass'],
+        files: [project.res.css.sass + '**/*.{scss,sass}'],
         tasks: ['sass', 'autoprefixer']
       },
-      livereloadWatch: {
+      livereload: {
         options: {
           livereload: true
         },
-        files: [project.dir + '*.html', project.res.css.devDir + '**/*.css']
+        files: [project.dir + '**/*.{html,png,jpg,gif,svg}', project.res.css.dir + '**/*.css']
       }
     },
     concurrent: {
       options: {
         logConcurrentOutput: true,
-        limit: 3
+        limit: 4
       },
-      projectWatch: ['watch:htmlTemplates', 'watch:sass', 'watch:livereloadWatch']
+      projectWatch: ['watch:html', 'watch:images', 'watch:sass', 'watch:livereload']
     },
     wait: {
       options: {
@@ -443,44 +526,55 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('process-css', 'CSS processing', function() {
-    var cssDirRegEx = new RegExp('<link(.)*href="' + project.res.css.devDir.replace(project.dir, ''), 'g');
-    var css = grunt.file.read(project.templates.css)
-        .replace(/(.|\t|\s|\r?\n|\r)*?<!-- @tx-css -->/, '')
-        .replace(/<!-- \/@tx-css -->(.|\t|\s|\r?\n|\r)*/, '')
-        .replace(/^\s(.)*print(.)*/gm, '')
-        .replace(/<!--(.|\t|\s|\r?\n|\r)*/, '')
-        .replace(cssDirRegEx, '')
-        .replace(/\r?\n|\r/g, '')
-        .replace(/\s/g, '')
-        .replace(/">$/, '');
-    var cssArray = css.split('">');
-    var cssExpected = cssArray.length;
-    var cssActual = grunt.file.expand([project.res.css.devDir + '*.css', "!" + project.res.css.devDir + project.res.css.print + ".css"]).length;
-    if (cssExpected === cssActual || (cssArray[0] === '' && cssActual === 0)) {
-      if (cssActual === 0) {
-        grunt.log.writeln('No .css-files to process.');
-      } else {
-        var processTasks = [];
-        processTasks.push('concat:css');
-        processTasks.push('concat:print');
-        grunt.config.set('task.cssArray', fillAnArray(cssArray, project.res.css.devDir));
-        processTasks = processTasks.concat(['uncss', 'csscomb', 'string-replace:cssComments', 'cssc', 'cssmin:cssMin']);
-        grunt.task.run(processTasks);
-      }
-    } else {
-      var errorMessage = '';
-      if (cssExpected > cssActual) {
-        errorMessage += 'There is got to be more .css-files.';
-      } else if (cssExpected < cssActual) {
-        errorMessage += 'Not all of the .css-files has been referenced.';
-      }
-      grunt.fail.warn(errorMessage);
+  grunt.registerTask('datauri-cleanup', 'Cleanup After datauri-fallback', function() {
+    if (grunt.file.isFile(project.res.css.sass + 'project/tx/_tx-projectImages-base64.scss')) {
+      grunt.file.delete(project.res.css.sass + 'project/tx/_tx-projectImages-base64.scss');
+    }
+    if (grunt.file.isFile(project.res.css.sass + 'project/tx/_tx-projectImages-IE.scss')) {
+      grunt.file.delete(project.res.css.sass + 'project/tx/_tx-projectImages-IE.scss');
+    }
+  });
+
+  grunt.registerTask('spritesSCSS', 'processing sprites styles', function() {
+    var scss = '';
+    grunt.file.delete(project.res.css.sass + 'project/_project-sprites.scss');
+    if (project.res.images.sprites.length > 0) {
+      project.res.images.sprites.forEach(function(sprite) {
+        var name = sprite.split('.')[0];
+        var ext = sprite.split('.')[1];
+        var scssPath = project.res.css.sass + 'project/tx/_' + name;
+        var scssBlock = '';
+        if (grunt.file.isFile(scssPath + '.scss')) {
+          scssBlock = grunt.file.read(scssPath + '.scss').replace(/(?:\r?\n|\r){2,}/gm, '');
+          scssBlock = '// ' + name + '.' + ext + '\n\n' + scssBlock + '\n\n\n\n';
+          if (scss === '') {
+            scss += scssBlock;
+          } else {
+            scss += '\n\n\n' + scssBlock;
+          }
+          grunt.file.delete(scssPath + '.scss');
+        }
+        if (grunt.file.isFile(scssPath + '@2x.scss')) {
+          scssBlock = grunt.file.read(scssPath + '@2x.scss').replace(/(?:\r?\n|\r){2,}/gm, '');
+          scssBlock = '// ' + name + '@2x.' + ext + '\n\n' + scssBlock + '\n\n\n\n';
+          scss += scssBlock;
+          grunt.file.delete(scssPath + '@2x.scss');
+        }
+        if (grunt.file.isFile(scssPath + '@3x.scss')) {
+          scssBlock = grunt.file.read(scssPath + '@3x.scss').replace(/(?:\r?\n|\r){2,}/gm, '');
+          scssBlock = '// ' + name + '@3x.' + ext + '\n\n' + scssBlock + '\n\n\n\n';
+          scss += scssBlock;
+          grunt.file.delete(scssPath + '@3x.scss');
+        }
+        scss = scss.replace(/\/\*[^*]*\*+([^/*][^*]*\*+)*\/(?:\r?\n|\r)/gm, '').replace(/\, \)/gm, ')').replace(/(\s|\()0px/gm, '$1' + '0') + '//eof';
+        scss = scss.replace('\n\n\n\n//eof', '\n');
+        grunt.file.write(project.res.css.sass + 'project/_project-sprites.scss', scss);
+      });
     }
   });
 
   grunt.registerTask('cssInline', 'Injecting CSS', function() {
-    var cssRegEx = new RegExp('<(.)*' + project.res.css.filename + '.min.css(.)*>', 'g');
+    var cssRegEx = new RegExp('<link(?:.|\r?\n|\r)*' + project.res.css.print + '.min.css(.)*>', 'g');
     var css = '<style rel="stylesheet" type="text/css">' + grunt.file.read(project.res.css.dir + project.res.css.filename + '.min.css') + grunt.file.read(project.res.css.dir + project.res.css.print + ".min.css") + '</style>';
     var files = grunt.file.expand([project.build.dir + '*.html']);
     var filesLength = files.length;
@@ -491,18 +585,87 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('quality', ['htmlhint', 'scsslint', 'csslint', 'csscss', 'colorguard', 'arialinter']);
+  grunt.registerTask('compileTasks', 'compiling', function() {
+    if (project.res.images.sprites.length > 0) {
+      grunt.task.run([
+        'clean:res',
+        'process-sprites',
+        'images',
+        'process-html',
+        'process-css'
+      ]);
+    } else {
+      grunt.task.run([
+        'clean:res',
+        'images',
+        'process-html',
+        'process-css'
+      ]);
+    }
+  });
 
-  grunt.registerTask('test', ['backstop']);
+  grunt.registerTask('quality', [
+    'htmlhint',
+    'scsslint',
+    'csslint',
+    'csscss',
+    'colorguard'
+  ]);
 
-  grunt.registerTask('performance', ['analyzecss']);
+  grunt.registerTask('images-datauri', [
+    'datauri',
+    'concat:datauri',
+    'datauri-cleanup'
+  ]);
 
-  grunt.registerTask('generate-css', ['sass', 'autoprefixer']);
+  grunt.registerTask('process-sprites', [
+    'sprite',
+    'spritesSCSS'
+  ]);
 
-  grunt.registerTask('watch-project', ['concurrent']);
+  grunt.registerTask('images', [
+    'imagemin:images',
+    'svgmin:images',
+    'images-datauri'
+  ]);
 
-  grunt.registerTask('compile', ['clean:res', 'processhtml', 'generate-css', 'process-css']);
+  grunt.registerTask('process-html', [
+    'processhtml'
+  ]);
 
-  grunt.registerTask('build', ['compile', 'clean:build', 'copy:build', 'string-replace:build', 'htmlmin:cleanup', 'wkhtmltopdf', 'wait', 'html2md', 'string-replace:md', 'cssInline', 'clean:buildRes']);
+  grunt.registerTask('process-css', [
+    'sass',
+    'autoprefixer',
+    'uncss',
+    'cssc',
+    'cssmin:cssMin'
+  ]);
+
+  grunt.registerTask('watch-project', [
+    'concurrent'
+  ]);
+
+  grunt.registerTask('compile', [
+    'compileTasks'
+  ]);
+
+  grunt.registerTask('build', [
+    'compile',
+    'clean:build',
+    'copy:build',
+    'string-replace:build',
+    'htmlmin',
+    'prettify',
+    'wkhtmltopdf',
+    'wait',
+    'html2md',
+    'string-replace:md',
+    'cssInline',
+    'clean:buildRes'
+  ]);
+
+  grunt.registerTask('compress-build', [
+    'compress:build'
+  ]);
 
 };

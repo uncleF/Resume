@@ -1,6 +1,6 @@
 # Илья Бирюков
 
-Front end разработчик (последняя редакция 18.12.2015)
+Front end разработчик (последняя редакция 15.01.2016)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
 
@@ -109,15 +109,18 @@ Front end разработчик с дипломом факультета при
 
 ## Примеры работ
 
+*   [http://rosyama.ru/](http://rosyama.ru/)
 *   [https://fbk.info/](https://fbk.info/)
-*   [https://dem-coalition.org/](https://dem-coalition.org/)
-*   [https://volonter.dem-coalition.org/](https://volonter.dem-coalition.org/)
-*   [http://kristall-komfort.ru/](http://kristall-komfort.ru/)
-*   [http://optrika.ru/](http://optrika.ru/)
+*   [https://20.navalny.com/](https://20.navalny.com/)
 *   [http://www.domskala.ru/](http://www.domskala.ru/)
-*   [http://ir.magnit.com/](http://ir.magnit.com/)
 *   [http://ruport.ru/](http://ruport.ru/)
 *   [http://зарулем23.рф/](http://зарулем23.рф/)
+*   [http://optrika.ru/](http://optrika.ru/)
+*   [https://prokuror.fbk.info/](https://prokuror.fbk.info/)
+*   [http://www.semeyniy-uzhin.ru/](http://www.semeyniy-uzhin.ru/)
+*   [http://www.gagarin-catering.ru/](http://www.gagarin-catering.ru/)
+*   [http://kristall-komfort.ru/](http://kristall-komfort.ru/)
+*   [http://ir.magnit.com/](http://ir.magnit.com/)
 *   [http://shans23.ru/](http://shans23.ru/)
 *   [http://buhtagold.ru/](http://buhtagold.ru/)
 *   [http://cifra-group.ru/](http://cifra-group.ru/)
