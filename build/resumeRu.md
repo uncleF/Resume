@@ -1,6 +1,6 @@
 # Илья Бирюков
 
-Front end разработчик (последняя редакция 15.01.2016)
+Front end разработчик (последняя редакция 12.02.2016)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
 
@@ -42,21 +42,18 @@ Front end разработчик с дипломом факультета при
 
 ### Навыки
 
-*   HTML5, CSS3 (Sass), JavaScript (JQuery, Backbone.js, Three.js, etc.), SVG (Snap.svg, Raphael)
-*   Аудит производительности и доступности сайтов и веб-приложений (npm, RubyGems, веб-приложения и пр.)
-*   Node.js (npm, Grunt, Bower), XML
-*   Unity
-*   PHP, SQL
-*   Java, Objective-C
+*   HTML5, CSS3 (Sass, PostCSS), JavaScript (ES2015, Node.js, JQuery, Backbone.js, Three.js, etc.), XML, SVG
+*   Аудит производительности и доступности сайтов и веб-приложений
+*   Front end development tooling (Git, npm, Grunt, Gulp, etc.)
+*   Unity,PHP, SQL, Java, Objective-C
 
 ### Инструменты
 
-*   Собственный открытый [инструмент](https://github.com/uncleF/TemplateX) (мини-фреймфорк ) для быстрого развертывания среды разработки.
-*   Sublime Text, Eclipse, Xcode, Android Studio
-*   Grunt, Bower, Gulp, Apache Ant
-*   Adobe Photoshop, Sketch, Pixelmator, Adobe Illustrator, Adobe Flash, Sketca SVG Editor, Inkscape
-*   Ghostlab, [Litmus](https://litmus.com)
-*   Basecamp, InVision, Megaplan, Toggl Desktop
+*   Собственный открытый [инструмент](https://github.com/uncleF/TemplateX) для быстрого развертывания среды разработки.
+*   Sublime Text, Atom, Eclipse, Xcode, Android Studio
+*   Emmet, npm, Grunt, Gulp, Bower, Apache Ant
+*   Adobe Photoshop, Sketch, Blender, Inkscape, Pixelmator, Adobe Illustrator
+*   Ghostlab, [Litmus](https://litmus.com), Basecamp, InVision, Megaplan, Toggl Desktop
 *   Git, [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/)
 *   Wordpress, Drupal
 
@@ -67,7 +64,7 @@ Front end разработчик с дипломом факультета при
 #### Front end разработчик и консультант
 
 *   Разработал множество сайтов и веб-приложений.
-*   Работал волонтером на [Фонд Борьбы с Коррупцией](http://fbk.info/). Приходилось выполнять достаточно сложные, нетривиальные задачи в крайне сжатые сроки.
+*   Работал волонтером на [Фонд Борьбы с Коррупцией](http://fbk.info/). Приходилось выполнять достаточно сложные, нетривиальные задачи в (иногда крайне) сжатые сроки.
 *   Создал инструмент на основе Grunt для автоматической сборки шаблонов для пропроитарного генератора лэндингов.
 *   Консультировал клиентов по вопросам производительности и доступности front end'а.
 

@@ -1,6 +1,6 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 01/15/2016)
+Front End Developer (last revisited on 02/12/2016)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 
@@ -42,21 +42,18 @@ Front end developer with a computer science degree, 8 years of experience and de
 
 ### Skills
 
-*   HTML5, CSS3 (Sass), JavaScript (JQuery, Backbone.js, Three.js, etc.), SVG (Snap.svg, Raphael)
-*   Front end performance and accessibility audit (npm, RubyGems, standalone and web apps)
-*   Node.js (npm, Grunt, Bower), XML
-*   Unity
-*   PHP, SQL
-*   Java, Objective-C
+*   HTML5, CSS3 (Sass, PostCSS), JavaScript (ES2015, Node.js, JQuery, Backbone.js, Three.js, etc.), XML, SVG
+*   Front end performance and accessibility audit
+*   Front end development tooling (Git, npm, Grunt, Gulp, etc.)
+*   Unity, PHP, SQL, Java, Objective-C
 
 ### Tools
 
-*   My own open [development tool](https://github.com/uncleF/TemplateX) (mini-framework) for rapid project workflow setup
-*   Sublime Text, Eclipse, Xcode, Android Studio
-*   Emmet, Grunt, Bower, Gulp, Apache Ant
-*   Adobe Photoshop, Sketch, Pixelmator, Adobe Illustrator, Adobe Flash, Sketca SVG Editor, Inkscape
-*   Ghostlab, [Litmus](https://litmus.com)
-*   Basecamp, InVision, Megaplan, Toggl Desktop
+*   My own open [development tool](https://github.com/uncleF/TemplateX) for rapid project workflow setup
+*   Sublime Text, Atom, Eclipse, Xcode, Android Studio
+*   Emmet, npm, Grunt, Gulp, Bower, Apache Ant
+*   Adobe Photoshop, Sketch, Blender, Inkscape, Pixelmator, Adobe Illustrator
+*   Ghostlab, [Litmus](https://litmus.com), Basecamp, InVision, Megaplan, Toggl Desktop
 *   Git, [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/)
 *   Wordpress, Drupal
 
@@ -67,7 +64,7 @@ Front end developer with a computer science degree, 8 years of experience and de
 #### Front End Developer & Consultant
 
 *   Developed multiple websites and applications.
-*   Worked as a volunteer for the [FBK (Anti-Corruption Foundation)](http://fbk.info/). Had to work on (extremly) tight schedule and find solutions for the complex, nontrivial problems.
+*   Worked as a volunteer for the [FBK (Anti-Corruption Foundation)](http://fbk.info/). Had to work on (sometimes extremly) tight schedule and find solutions for the complex, nontrivial problems.
 *   Built a Grunt-based template assembling tool for the proprietary landing page generator.
 *   Consulted multiple clients on front end performance and accessibility.
 
@@ -77,7 +74,7 @@ Front end developer with a computer science degree, 8 years of experience and de
 
 *   Developed multiple websites and applications. Including [high traffic e-commerce site](http://topliga.ru/).
 *   Developed user interface for the [e-commerce iOS app](https://itunes.apple.com/us/app/fingo.-furniture.-try-before/id567070760?mt=8) from scratch.
-*   Built UI prototyps and developed interfaces for the interactive expo booths.
+*   Built UI prototypes and developed interfaces for the interactive expo booths.
 *   Was responsible for setting up development environment and workflow.
 *   Built several tools for automating development process.
 *   Consulted co-workers and clients on all matters concerning front end development.
@@ -85,7 +82,7 @@ Front end developer with a computer science degree, 8 years of experience and de
 
 #### Front End DeveloperFebruary 2008 - January 2012
 
-*   Developed multiple websites using several CMS developed in-house and out of the box (PHP, Python).
+*   Developed multiple websites using several CMS (developed in-house and out of the box (PHP, Python)).
 *   Worked on [high traffic regional information portal](http://www.kuban.ru/).
 *   Participated in development of interfaces for the interactive expo booths.
 *   Created numerous marketing e-mail templates.
@@ -94,8 +91,8 @@ Front end developer with a computer science degree, 8 years of experience and de
 
 #### Front End Developer
 
-*   First professional steps as a fully employed front end developer.
-*   Developed multiple websites using an in-house CMS (Perl-based).
+*   First professional steps as a fulltime front end developer.
+*   Developed multiple websites using an in-house CMS (Perl).
 *   Briefly worked on two hight traffic projects — [regional news portal](http://www.yuga.ru/) and [social networking site](http://www.diary.ru/).
 
 ### FreelanceBefore December 2006
