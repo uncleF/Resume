@@ -362,19 +362,6 @@ module.exports = function(grunt) {
         expand: true
       }
     },
-    svgmin: {
-      options: {
-        plugins: [{
-          removeViewBox: false
-        }]
-      },
-      images: {
-        cwd: project.dir,
-        src: ['**/*.svg', '!**/fonts/**/*.svg', '!**/tx-*.*', '!**/tx/*.*'],
-        dest: project.dir,
-        expand: true
-      }
-    },
 
     clean: {
       options: {
@@ -485,7 +472,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('images', [
     'imagemin:images',
-    'svgmin:images',
   ]);
 
   grunt.registerTask('process-html', [
