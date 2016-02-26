@@ -1,6 +1,6 @@
 # Ilya Biryukov
 
-Front End Developer (last revisited on 02/12/2016)
+Front End Developer (last revisited on 02/26/2016)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 
@@ -121,11 +121,10 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   [http://www.gagarin-catering.ru/](http://www.gagarin-catering.ru/)
 *   [http://kristall-komfort.ru/](http://kristall-komfort.ru/)
 *   [http://ir.magnit.com/](http://ir.magnit.com/)
-*   [http://shans23.ru/](http://shans23.ru/)
 *   [http://buhtagold.ru/](http://buhtagold.ru/)
+*   [http://buhtagold.ru/content/7/](http://buhtagold.ru/content/7/)
 *   [http://cifra-group.ru/](http://cifra-group.ru/)
 *   [http://emercit.ru/](http://emercit.ru/)
-*   [http://buhtagold.ru/content/7/](http://buhtagold.ru/content/7/)
 *   [http://gsyp.ru/](http://gsyp.ru/)
 *   [http://gsyp.ru/complex/building/2/](http://gsyp.ru/complex/building/2/)
 *   [http://dvinuli.ru/](http://dvinuli.ru/)
@@ -133,8 +132,6 @@ Front end developer with a computer science degree, 8 years of experience and de
 *   [http://topliga.ru/](http://topliga.ru/)
 *   [http://fingo.pro/](http://fingo.pro/)
 *   [http://idisplay.spider.ru/](http://idisplay.spider.ru/)
-*   [http://www.arkhyz-jivitsa.ru/landing/](http://www.arkhyz-jivitsa.ru/landing/)
-*   [http://moscow.arkhyz-visma.ru/landing/](http://moscow.arkhyz-visma.ru/landing/)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 

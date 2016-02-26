@@ -1,6 +1,6 @@
 # Илья Бирюков
 
-Front end разработчик (последняя редакция 12.02.2016)
+Front end разработчик (последняя редакция 26.02.2016)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Резюме)
 
@@ -118,11 +118,10 @@ Front end разработчик с дипломом факультета при
 *   [http://www.gagarin-catering.ru/](http://www.gagarin-catering.ru/)
 *   [http://kristall-komfort.ru/](http://kristall-komfort.ru/)
 *   [http://ir.magnit.com/](http://ir.magnit.com/)
-*   [http://shans23.ru/](http://shans23.ru/)
 *   [http://buhtagold.ru/](http://buhtagold.ru/)
+*   [http://buhtagold.ru/content/7/](http://buhtagold.ru/content/7/)
 *   [http://cifra-group.ru/](http://cifra-group.ru/)
 *   [http://emercit.ru/](http://emercit.ru/)
-*   [http://buhtagold.ru/content/7/](http://buhtagold.ru/content/7/)
 *   [http://gsyp.ru/](http://gsyp.ru/)
 *   [http://gsyp.ru/complex/building/2/](http://gsyp.ru/complex/building/2/)
 *   [http://dvinuli.ru/](http://dvinuli.ru/)
@@ -130,8 +129,6 @@ Front end разработчик с дипломом факультета при
 *   [http://topliga.ru/](http://topliga.ru/)
 *   [http://fingo.pro/](http://fingo.pro/)
 *   [http://idisplay.spider.ru/](http://idisplay.spider.ru/)
-*   [http://www.arkhyz-jivitsa.ru/landing/](http://www.arkhyz-jivitsa.ru/landing/)
-*   [http://moscow.arkhyz-visma.ru/landing/](http://moscow.arkhyz-visma.ru/landing/)
 
 E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Regarding Resume)
 

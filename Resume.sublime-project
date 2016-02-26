@@ -20,12 +20,12 @@
       "path": "dev/res/templates"
     }, {
       "follow_symlinks": true,
-      "name": "Resume: Sass",
-      "path": "dev/res/sass"
+      "name": "Resume: Portfolio",
+      "path": "portfolio"
     }, {
       "follow_symlinks": true,
-      "name": "Resume: JavaScript",
-      "path": "dev/res/js-dev"
+      "name": "Resume: Sass",
+      "path": "dev/res/sass"
     }, {
       "file_exclude_patterns":
       [
