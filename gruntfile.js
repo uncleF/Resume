@@ -1,6 +1,6 @@
 // Gruntfile for the Resume Project
 
-var PROJECT           = 'Biryukov Ilya – Front End Developer';   // Project Name
+var PROJECT           = 'Ilya Biryukov – Front-end Developer';   // Project Name
 
 var DEVELOPMENT_DIR   = 'dev';                                   // Development
 var BUILD_DIR         = 'build';                                 // Build
@@ -18,7 +18,8 @@ var CSS_IMAGES_DIR    = 'images';                                // CSS Images (
 var SASS_DIR          = 'sass';                                  // Sass
 var CSS_DIR           = 'css';                                   // CSS
 var CSS_FILENAME      = 'styles';                                // CSS Filename
-var CSS_PRINT         = 'print';                                 // CSS Filename
+var CSS_PHONE         = 'phone';                                 // CSS Phone Filename
+var CSS_PRINT         = 'print';                                 // CSS Print Filename
 
 module.exports = function(grunt) {
 
@@ -49,6 +50,7 @@ module.exports = function(grunt) {
             dir: resourcesDirCompiled + CSS_DIR + '/',
             sass: resourcesDirCompiled + SASS_DIR + '/',
             filename: CSS_FILENAME,
+            phone: CSS_PHONE,
             print: CSS_PRINT
           }
         },
@@ -379,23 +381,17 @@ module.exports = function(grunt) {
         expand: true
       }
     },
-    compress: {
-      build: {
-        options: {
-          mode: 'zip',
-          archive: project.name + '.build.zip'
-        },
-        cwd: project.build.dir,
-        src: ['**'],
-        dest: '.',
-        expand: true
-      }
-    },
 
     wkhtmltopdf: {
       resumePDF: {
         src: [project.build.dir + '*.html', '!' + project.build.dir + '*-emailTemplate.html', '!' + project.build.dir + '*.mail.html'],
         dest: project.build.dir,
+        args: [
+          '--margin-bottom', '0mm',
+          '--margin-left', '0mm',
+          '--margin-right', '0mm',
+          '--margin-top', '0mm'
+        ]
       }
     },
     html2md: {
@@ -451,8 +447,8 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('cssInline', 'Injecting CSS', function() {
-    var cssRegEx = new RegExp('<link(?:.|\r?\n|\r)*' + project.res.css.print + '.min.css(.)*>', 'g');
-    var css = '<style rel="stylesheet" type="text/css">' + grunt.file.read(project.res.css.dir + project.res.css.filename + '.min.css') + grunt.file.read(project.res.css.dir + project.res.css.print + ".min.css") + '</style>';
+    var cssRegEx = new RegExp('<link(?:.|\r?\n|\r)*' + project.res.css.filename + '.min.css(.)*>', 'g');
+    var css = '<style rel="stylesheet" type="text/css">' + grunt.file.read(project.res.css.dir + project.res.css.filename + '.min.css') + grunt.file.read(project.res.css.dir + project.res.css.phone + ".min.css") +  + grunt.file.read(project.res.css.dir + project.res.css.print + ".min.css") + '</style>';
     var files = grunt.file.expand([project.build.dir + '*.html']);
     var filesLength = files.length;
     var fileIndex = 0;
@@ -510,10 +506,6 @@ module.exports = function(grunt) {
     'string-replace:md',
     'cssInline',
     'clean:buildRes'
-  ]);
-
-  grunt.registerTask('compress-build', [
-    'compress:build'
   ]);
 
 };

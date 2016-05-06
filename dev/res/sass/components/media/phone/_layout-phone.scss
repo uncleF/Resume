@@ -1,0 +1,69 @@
+/* Layout Base */
+
+body {
+  min-width: 0;
+  padding: 0 ($gap / 2);
+}
+
+
+
+/* Content */
+
+%conetntPhoneStyle {
+  width: auto;
+}
+
+
+
+/* Header */
+
+.header {
+  @include tx-rhythm(0, 1, $marginRight: ($gap / -2), $marginLeft: ($gap / -2));
+  @include tx-rhythm-padding(1, 1, $paddingRight: ($gap / 2), $paddingLeft: ($gap / 2));
+}
+
+.headerContent {
+  @extend %conetntPhoneStyle;
+}
+
+
+
+/* Sections */
+
+.sectionContent {
+  @extend %conetntPhoneStyle;
+}
+
+
+
+/* Footer */
+
+.footer {
+  @include tx-rhythm-padding(0, 2, $paddingRight: ($gap / 2), $paddingLeft: ($gap / 2));
+  margin: 0 ($gap / -2);
+}
+
+.footerContent {
+  @extend %conetntPhoneStyle;
+}
+
+
+
+/* Contacts */
+
+.contacts {
+
+  dt,
+  dd {
+    display: block;
+  }
+
+  dt {
+    margin: 0;
+  }
+
+  dd {
+    @include tx-rhythm(0, .5);
+  }
+
+}

@@ -1,4 +1,9 @@
-/* Baseline Styles, Typography & Rhythm */
+@import 'patterns/_tx-fastTouch';
+@import 'patterns/_tx-linkTouchStates';
+
+
+
+/* Typography & Vertical Rhythm */
 
 html {
   @include tx-baseline;
@@ -9,7 +14,7 @@ body {
   @include tx-hyphens;
   color: $text;
   font-family: $font-sans;
-  font-feature-settings: 'liga';
+  font-feature-settings: 'liga', 'kern';
 }
 
 %HTML5BlocksStyle {
@@ -70,47 +75,71 @@ summary {
 
 %headerStyle {
   font-weight: bold;
+  font-family: $font-sans-heading;
+  text-transform: uppercase;
   text-rendering: auto;
-  page-break-after: avoid;
-  break-after: avoid;
   orphans: 3;
   widows: 3;
 }
 
 h1 {
   @extend %headerStyle;
-  @include tx-rhythm(1, 2);
-  @include tx-font-size($h1-fontSize, 2);
+  @include tx-rhythm(0, 2);
+  @include tx-font-size(h1);
 }
 
 h2 {
   @extend %headerStyle;
-  @include tx-rhythm(1, 1);
-  @include tx-font-size($h2-fontSize, 2);
+  @include tx-rhythm(0, 2);
+  @include tx-rhythm-padding(0, 1);
+  @include tx-font-size(h2);
+  border-bottom: 2px solid $h2-color;
+  color: $h2-color;
+  text-align: right;
 }
 
 h3 {
   @extend %headerStyle;
-  @include tx-rhythm(1, 1);
-  @include tx-font-size($h3-fontSize, 1);
+  @include tx-rhythm(2, 1);
+  @include tx-font-size(h3);
+  color: $h3-color;
+
+  a {
+    color: $h3-color;
+    text-decoration: none;
+
+    &:visited,
+    &:hover,
+    &:active {
+      color: $h3-color;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+
+  }
+
 }
 
 h4 {
   @extend %headerStyle;
   @include tx-rhythm(1, 1);
-  @include tx-font-size($h4-fontSize, 1);
+  @include tx-font-size(h4);
+  color: $h4-color;
 }
 
 h5 {
   @extend %headerStyle;
   @include tx-rhythm(1, 1);
-  @include tx-font-size($h5-fontSize, 1);
+  @include tx-font-size(h5);
 }
 
 h6 {
   @extend %headerStyle;
   @include tx-rhythm(1, 1);
-  @include tx-font-size($h6-fontSize, 1);
+  @include tx-font-size(h6);
 }
 
 %marginStyle {
@@ -123,7 +152,6 @@ h6 {
 
 p {
   @extend %marginStyle;
-  @extend %hyphenStyle;
 }
 
 dl {
@@ -131,19 +159,36 @@ dl {
 }
 
 dt {
-  @include tx-rhythm(1);
+  @include tx-rhythm(1, .5);
   font-weight: bold;
 }
 
 dd {
-  @include tx-rhythm(0, 1, $mlft: 1.5em);
+  @include tx-rhythm(.5, .5, $marginLeft: 1.5em);
   font-style: italic;
 }
 
 ul {
   @extend %marginStyle;
-  @extend %u-listResetStyle;
-  list-style-type: disc;
+  page-break-inside: avoid;
+  list-style: none;
+
+  > li {
+
+    &:before {
+      @include tx-pseudo(relative, inline-block);
+      top: -.15em;
+      left: -.75em;
+      width: $bullet-size;
+      height: $bullet-size;
+      border-radius: 50%;
+      margin: 0 (-$bullet-size) 0 0;
+      background: $bullet-color;
+      vertical-align: middle;
+    }
+
+  }
+
 }
 
 ol {
@@ -152,11 +197,11 @@ ol {
 }
 
 %nestedListsStyle {
-  @include tx-rhythm(1, 1, $mlft: 1.5em);
+  @include tx-rhythm(1, 1, $marginLeft: 1.5em);
 }
 
 li {
-  @extend %marginStyle;
+  @include tx-rhythm(.5, .5);
 
   >ul {
     @extend %nestedListsStyle;
@@ -234,7 +279,7 @@ b {
 blockquote {
   @extend %quoteEmphasisStyle;
   @extend %quotesStyle;
-  @include tx-rhythm(1, 1, $mrgt: 3em, $mlft: 3em);
+  @include tx-rhythm(1, 1, $marginRight: 3em, $marginLeft: 3em);
 }
 
 em {
@@ -329,7 +374,7 @@ kbd {
 
   @extend %attentionStyle;
   @include tx-inline-block;
-  @include tx-grid-height(1);
+  @include tx-grid-height(1, 1);
   padding: 0 .5em;
   border-radius: 3px;
   background: $kbd-bg;
@@ -340,8 +385,12 @@ kbd {
   vertical-align: top;
 }
 
+%smallStyle {
+  @include tx-font-size(small, 0);
+}
+
 %supSubStyle {
-  @include tx-font-size($fontSizeSmall, 0);
+  @extend %smallStyle;
   position: relative;
 }
 
@@ -356,11 +405,11 @@ sub {
 }
 
 big {
-  @include tx-font-size($fontSizeLarge, 0);
+  @include tx-font-size(large, 0);
 }
 
 small {
-  @include tx-font-size($fontSizeSmall, 0);
+  @extend %smallStyle;
 }
 
 u {
@@ -392,7 +441,7 @@ caption {
 %tableCellStyle {
   $tableCell-borderColor: $gray;
 
-  @include tx-table-borders(1px, 1, $bcolor: $tableCell-borderColor, $prgt: ($gap / 2), $plft: ($gap / 2));
+  @include tx-table-borders(1px, 1, $color: $tableCell-borderColor, $paddingRight: ($gap / 2), $paddingLeft: ($gap / 2));
 }
 
 table {
@@ -436,4 +485,229 @@ hr {
   height: 0;
   padding: 0;
   border-top: 1px solid $hr-borderColor;
+}
+
+
+
+/* Selection */
+
+::selection {
+  color: $selection-color;
+  background: $selection-background;
+}
+
+
+
+/* Focus */
+
+%focusStyle {
+
+  &:focus {
+    outline: $focus-outlineWidth dotted $focus-outlineColor;
+  }
+
+}
+
+
+
+/* Links */
+
+a {
+  @extend %focusStyle;
+  @extend %tx-fastTouch;
+  @extend %tx-linkTouchStates;
+  color: $link;
+  -webkit-tap-highlight-color: rgba($active, .25);
+  text-decoration: underline;
+  transition: $UITransition;
+
+  &:visited {
+    color: $visited;
+  }
+
+  &:hover {
+    color: $hover;
+  }
+
+  &:active {
+    color: $active;
+  }
+
+}
+
+
+
+/* Forms */
+
+label {
+  @extend %tx-fastTouch;
+  cursor: pointer;
+}
+
+%formBaselineStyle {
+  @extend %focusStyle;
+  margin: 0;
+  font-family: inherit;
+}
+
+%formFontStyle {
+  font-size: inherit;
+}
+
+%formBoxSizingStyle {
+  box-sizing: content-box;
+}
+
+%formBorderResetStyle {
+  border: 0;
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+
+}
+
+%formTextResetStyle {
+  text-transform: none;
+}
+
+%formAlignStyle {
+  vertical-align: top;
+}
+
+%formStyle {
+  border: $field-borderWidth solid $field-borderColor;
+}
+
+%formRadioCheckboxStyle {
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+%formAppearanceResetStyle {
+  appearance: none;
+}
+
+%formInactiveStyle {
+  opacity: .5;
+  cursor: default;
+  cursor: not-allowed;
+}
+
+%formPlaceholderStyle {
+  $formPlaceholderStyle-color: $gray;
+
+  &::placeholder {
+    color: $formPlaceholderStyle-color;
+    opacity: 1;
+  }
+
+}
+
+input {
+  @extend %formBaselineStyle;
+  @extend %formFontStyle;
+  @extend %formBoxSizingStyle;
+  @extend %formBorderResetStyle;
+  @extend %formAlignStyle;
+  @extend %formPlaceholderStyle;
+
+  &[type='radio'] {
+    @extend %formRadioCheckboxStyle;
+  }
+
+  &[type='checkbox'] {
+    @extend %formRadioCheckboxStyle;
+  }
+
+  &[type='submit'] {
+    @extend %formAppearanceResetStyle;
+  }
+
+  &[type='file'] {
+    height: auto;
+    border: 0;
+  }
+
+  &[type='search'] {
+    @extend %formAppearanceResetStyle;
+  }
+
+  &[type='number'] {
+    @extend %formAppearanceResetStyle;
+
+    &::-webkit-inner-spin-button {
+      appearance: none;
+    }
+
+  }
+
+  &[disabled] {
+    @extend %formInactiveStyle;
+  }
+
+  &[readonly] {
+    @extend %formInactiveStyle;
+  }
+
+}
+
+select {
+  @extend %formBaselineStyle;
+  @extend %formFontStyle;
+  @extend %formTextResetStyle;
+  @extend %formAlignStyle;
+  @extend %formStyle;
+  @extend %tx-fastTouch;
+  @include tx-grid-height(1.5, $setLineHeight: false);
+  vertical-align: top;
+
+  &[multiple] {
+    @include tx-grid-height(5, $setLineHeight: false);
+  }
+
+}
+
+%buttonStyle {
+  @extend %tx-fastTouch;
+  @include tx-grid-height(1.5, $setLineHeight: false);
+  padding: 0 ($gap / 2);
+  cursor: pointer;
+}
+
+button {
+  @extend %formBaselineStyle;
+  @extend %formFontStyle;
+  @extend %formBoxSizingStyle;
+  @extend %formBorderResetStyle;
+  @extend %formTextResetStyle;
+  @extend %formAppearanceResetStyle;
+  @extend %buttonStyle;
+
+  &[disabled] {
+    @extend %formInactiveStyle;
+  }
+
+}
+
+textarea {
+  @extend %formBaselineStyle;
+  @extend %formBoxSizingStyle;
+  @extend %formStyle;
+  @extend %formPlaceholderStyle;
+  @include tx-form-height(9, 1);
+  @include tx-rhythm-padding(.25, .25, $paddingRight: ($gap / 2), $paddingLeft: ($gap / 2));
+  display: block;
+  overflow: auto;
+  font-size: inherit;
+
+  &[disabled] {
+    @extend %formInactiveStyle;
+  }
+
+  &[readonly] {
+    @extend %formInactiveStyle;
+  }
+
 }

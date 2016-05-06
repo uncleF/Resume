@@ -6,12 +6,10 @@ html {
 }
 
 body {
-  $body-minWidth: ($desktop-min - $gap * 2);
-
-  @include tx-set-boundaries($body-minWidth);
   @include tx-scroll-bar(true);
   position: relative;
   padding: 0;
+  margin: 0;
   background: $background;
 }
 
@@ -19,79 +17,49 @@ body {
 
 /* Content */
 
-%contentStyle {
-  width: ($desktop-min - $gap * 2);
-  padding: 0 $gap;
+%conetntStyle {
+  max-width: $content-width;
   margin: 0 auto;
-}
-
-.content {
-  @extend %contentStyle;
-}
-
-.resumeNote {
-  $resumeNote-color: $greenLightest;
-
-  color: $resumeNote-color;
-}
-
-.emplymentDate {
-  $emplymentDate-color: $grayLight;
-
-  display: block;
-  color: $emplymentDate-color;
-  white-space: nowrap;
 }
 
 
 
 /* Header */
 
-%headerFooterStyle {
-  $headerFooter-color: $white;
-  $headerFooter-backgroundStart: $green;
-  $headerFooter-backgroundEnd: $greenLight;
-
-  color: $headerFooter-color;
-  background: $headerFooter-backgroundStart;
-  background: linear-gradient(30deg, $headerFooter-backgroundStart, $headerFooter-backgroundEnd);
-
-  a {
-    $hedaerFooter-link: $greenLightest;
-    $hedaerFooterHover-link: $white;
-
-    color: $hedaerFooter-link;
-    text-decoration-color: rgba($hedaerFooter-link, $underlineOpacity);
-
-    &:hover, &:active {
-      color: $hedaerFooterHover-link;
-      text-decoration-color: rgba($hedaerFooterHover-link, $underlineOpacity);
-    }
-
-  }
-
-  .phoneLink {
-    $phoneLink-color: $white;
-
-    color: $phoneLink-color;
-    text-decoration: none;
-    cursor: default;
-
-    &:visited, &:hover, &:active {
-      color: $phoneLink-color;
-    }
-
-  }
-
+%headerBackgroundStyle {
+  background: $header-background;
 }
 
 .header {
-  @extend %headerFooterStyle;
-  @include tx-rhythm-padding(2, 2);
+  @extend %headerBackgroundStyle;
+  @include tx-rhythm(0, 1);
+  @include tx-rhythm-padding(5, 5);
+  overflow: hidden;
+  color: $header-color;
 }
 
 .headerContent {
-  @extend %contentStyle;
+  @extend %conetntStyle;
+}
+
+.occupation {
+  display: block;
+  color: $occupation-color;
+}
+
+
+
+/* Sections */
+
+.section {
+  @include tx-rhythm-padding(3, 0);
+  overflow: hidden;
+  page-break-after: always;
+  break-after: always;
+}
+
+.sectionContent {
+  @extend %conetntStyle;
 }
 
 
@@ -99,60 +67,91 @@ body {
 /* Footer */
 
 .footer {
-  $footer-fontSize: $fontSize * .85;
+  @extend %headerBackgroundStyle;
+  @include tx-rhythm(3, 0);
+  @include tx-rhythm-padding(0, 2);
+  overflow: hidden;
+  color: $footerColor;
 
-  @extend %headerFooterStyle;
-  @include tx-rhythm(3, 0, $footer-fontSize);
-  @include tx-rhythm-padding(1, 1, $footer-fontSize);
-  @include tx-font-size($footer-fontSize, 1);
-  text-align: center;
-  white-space: nowrap;
+  &:before {
+    @include tx-pseudo(relative);
+    @include tx-rhythm(0, 2);
+    height: 1px;
+  }
+
 }
 
 .footerContent {
-  @extend %contentStyle;
+  @extend %conetntStyle;
+}
+
+.updated {
+  @include tx-rhythm(2, 0);
+  display: block;
+  color: $updated-color;
 }
 
 
 
-/* Conatcts */
+/* Contacts */
 
 .contacts {
+  @extend %u-descriptionListReset;
+  @include tx-rhythm(2, 0);
+  font-size: 0;
 
-  dt, dd {
-    margin: 0;
-  }
-
-  dt {
-    @include tx-rhythm(0, .25, $mrgt: .5em);
-    float: left;
-    clear: left;
-    font-weight: normal;
+  > dt {
+    @include tx-inline-block;
+    @include tx-font-size($fontSize * .85);
+    width: 0;
+    color: $contactItem-color;
+    vertical-align: top;
+    white-space: nowrap;
 
     &:after {
-      @include tx-pseudo(inline, relative, ":");
+      @include tx-pseudo(relative, inline, ': ');
     }
 
   }
 
-  dd {
-    @include tx-rhythm(0, .25);
-    font-style: normal;
-  }
-
-  .footer & {
+  > dd {
     @include tx-inline-block;
-    margin: 0;
+    @include tx-font-size($fontSize);
+    margin: 1.25em 3em 0 0;
+    vertical-align: bottom;
+  }
 
-    dt, dd {
-      @include tx-inline-block;
-      float: none;
-    }
+  a {
+    border-bottom: 1px solid $contactsLink-borderColor;
+    color: $contactsLink-color;
+    text-decoration: none;
 
-    dt {
-      margin: 0 .25em 0 1.5em;
+    &:visited,
+    &:hover,
+    &:active {
+      color: $contactsLink-color;
     }
 
   }
 
+}
+
+
+
+/* Employment */
+
+.emplymentDate {
+  @include tx-font-size(h6, 2.5);
+  @include tx-rhythm(0, -1);
+  display: block;
+  color: $emplymentDate-color;
+  white-space: nowrap;
+}
+
+
+
+/* Links */
+
+.links {
+  white-space: nowrap;
 }

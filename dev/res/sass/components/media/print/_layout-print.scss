@@ -1,0 +1,88 @@
+/* Layout Base */
+
+body {
+  max-width: none;
+  padding: 2.54cm;
+}
+
+
+
+/* Print Content */
+
+%conetntPrintStyle {
+  width: auto;
+}
+
+
+
+/* Header */
+
+.header {
+  padding: 0;
+  color: $text;
+  background: none;
+}
+
+.headerContent {
+  @extend %conetntPrintStyle;
+}
+
+
+
+/* Sections */
+
+.sectionContent {
+  @extend %conetntPrintStyle;
+}
+
+
+
+/* Footer */
+
+.footer {
+  background: none;
+}
+
+.footerContent {
+  @extend %conetntPrintStyle;
+}
+
+
+
+/* Contacts */
+
+.contacts {
+
+  dt,
+  dd {
+    display: block;
+  }
+
+  dt {
+    margin: 0;
+  }
+
+  dd {
+    @include tx-rhythm(0, .5);
+  }
+
+  a {
+    color: $text;
+
+    &:visited,
+    &:hover,
+    &:active {
+      color: $text;
+    }
+
+  }
+
+}
+
+
+
+/* Do Not Print */
+
+.doNotPrint {
+  display: none;
+}

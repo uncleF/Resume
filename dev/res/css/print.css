@@ -1,46 +1,7 @@
-@media print {
-  /* Typography & Rhythm */
-  @page {
-    size: A4;
-    margin: .5cm; }
-  html, body {
-    background: #fff; }
-  body {
-    color: #333;
-    font-size: 12pt;
-    line-height: 1.5; }
-  pre, code, var, acronym, abbr, ins, del, input, select, textarea {
-    border: 0;
-    color: #333;
-    text-decoration: none; }
-  p {
-    orphans: 3;
-    widows: 3; }
-  blockquote, img, tr, table {
-    page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-    break-inside: avoid; }
-  thead {
-    display: table-header-group; }
-  form {
-    display: none; }
-  [title]:after {
-    content: " (" attr(title) ")"; }
-  /* Layout Base */
-  body {
-    width: auto;
-    min-width: 0;
-    max-width: none;
-    padding: 2.54cm; }
-  /* Links */
-  a[href^='javascript:']:after, a[href^='#']:after, a[href^='mailto:']:after, a[href^='tel:']:after {
-    content: ''; }
-  a {
-    color: #333;
-    text-decoration: none; }
-    a:after {
-      content: " (" attr(href) ")";
-      font-size: 90%; }
-    a:visited {
-      color: #333; } }
+/* Inline-block */
+/* Inline-block IE */
+/* Pseudo Element */
+/* Verticla Alignment */
+/* Sprite Block */
+/* Print */
 /*# sourceMappingURL=print.css.map */

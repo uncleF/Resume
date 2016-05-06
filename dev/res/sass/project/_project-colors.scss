@@ -1,17 +1,14 @@
 // Colors
 
 $white: #fff;
-$red: #d9534f;
+$red: #ff6e5a;
 $blue: #337ab7;
 $blueDark: #23527c;
 $purple: #6f5499;
 $gray: #ccc;
-$grayLight: #bebebe;
-$green: #007236;
-$greenLight: #39b54a;
-$greenLightAlt: #8dc63f;
-$greenLightest: #6fe47f;
-$black: #333;
+$grayDark: #5b5b5b;
+$black: #2b2b2b;
+$blackTrue: #000;
 
 $underlineOpacity: .5;
 
@@ -20,18 +17,13 @@ $underlineOpacity: .5;
 // Default Colors
 
 $text: $black;
-$link: $blue;
-$visited: $purple;
-$hover: $red;
-$active: $blueDark;
-$focus-outlineColor: $gray;
-
 $background: $white;
-
-$placeholder-color: $gray;
-
-$selection-color: $white;
-$selection-background: $blue;
 
 $print-color: $black;
 $print-background: $white;
+
+$link: $blue;
+$visited: $purple;
+$hover: $blueDark;
+$active: $blueDark;
+$focus-outlineColor: $gray;
