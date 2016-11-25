@@ -49,7 +49,7 @@ Front-end разработчик с дипломом факультета при
 
 *   Собственный открытый [инструмент](https://github.com/uncleF/TemplateX) для быстрого развертывания среды разработки.
 *   Sublime Text, Atom, Eclipse, Xcode, Android Studio
-*   Emmet, npm, Grunt, Gulp, Bower, Apache Ant
+*   Emmet, npm, Yarn, Grunt, Gulp, Webpack, Bower, Apache Ant
 *   Adobe Photoshop, Sketch, Blender, Inkscape, Pixelmator, Adobe Illustrator
 *   Ghostlab, [Litmus](https://litmus.com), Basecamp, InVision, Megaplan, Toggl Desktop
 *   Git, [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/)
@@ -100,18 +100,19 @@ Front-end разработчик с дипломом факультета при
 
 ## Портфолио
 
-*   [http://rosyama.ru/](http://rosyama.ru/)
-*   [https://fbk.info/](https://fbk.info/)
-*   [https://20.navalny.com/](https://20.navalny.com/)
+*   [http://kuban-rc.com/](http://kuban-rc.com/)
 *   [http://www.domskala.ru/](http://www.domskala.ru/)
 *   [http://ruport.ru/](http://ruport.ru/)
+*   [http://ir.magnit.com/](http://ir.magnit.com/)
+*   [https://fbk.info/](https://fbk.info/)
+*   [http://rosyama.ru/](http://rosyama.ru/)
 *   [http://зарулем23.рф/](http://зарулем23.рф/)
+*   [https://20.navalny.com/](https://20.navalny.com/)
 *   [http://optrika.ru/](http://optrika.ru/)
 *   [https://prokuror.fbk.info/](https://prokuror.fbk.info/)
 *   [http://www.semeyniy-uzhin.ru/](http://www.semeyniy-uzhin.ru/)
 *   [http://www.gagarin-catering.ru/](http://www.gagarin-catering.ru/)
 *   [http://kristall-komfort.ru/](http://kristall-komfort.ru/)
-*   [http://ir.magnit.com/](http://ir.magnit.com/)
 *   [http://buhtagold.ru/](http://buhtagold.ru/)
 *   [http://buhtagold.ru/content/7/](http://buhtagold.ru/content/7/)
 *   [http://cifra-group.ru/](http://cifra-group.ru/)
@@ -130,4 +131,4 @@ E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Рез
 
 Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
 
-GitHub – [uncleF](https://github.com/uncleF)(последнее обновление 06.05.2016)
+GitHub – [uncleF](https://github.com/uncleF)(последнее обновление 25.11.2016)

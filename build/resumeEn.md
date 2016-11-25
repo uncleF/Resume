@@ -15,7 +15,7 @@ Front-end developer with a 5 years computer science degree (from the [Kuban Stat
 *   Able to complete projects fast and efficient.
 *   Good problem solving and collaborative skills. Rapid learner.
 *   Write clean and comprehensive code.
-*   Native Russian speaker, conversational English
+*   Native Russian speaker, proficient in English
 
 ### Areas of Expertise
 
@@ -26,7 +26,7 @@ Front-end developer with a 5 years computer science degree (from the [Kuban Stat
 *   Cross-browser Compatibility
 *   Front-end Performance & Critical Rendering Path Optimizations
 *   Progressive Enhancement / Graceful Degradation
-*   W3C Standards Compliance
+*   W3C and Accessibility Standards Compliance
 *   Content & Project Management
 
 ### Skills
@@ -40,7 +40,7 @@ Front-end developer with a 5 years computer science degree (from the [Kuban Stat
 
 *   My own open [development tool](https://github.com/uncleF/TemplateX) for rapid project workflow setup
 *   Sublime Text, Atom, Eclipse, Xcode, Android Studio
-*   Emmet, npm, Grunt, Gulp, Bower, Apache Ant
+*   Emmet, npm, Yarn, Grunt, Gulp, Webpack, Bower, Apache Ant
 *   Adobe Photoshop, Sketch, Blender, Inkscape, Adobe Illustrator
 *   Trello, Basecamp, InVision, Megaplan, Toggl Desktop
 *   Git, [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/)
@@ -92,18 +92,19 @@ Front-end developer with a 5 years computer science degree (from the [Kuban Stat
 
 ## Portfolio
 
-*   [http://rosyama.ru/](http://rosyama.ru/)
-*   [https://fbk.info/](https://fbk.info/)
-*   [https://20.navalny.com/](https://20.navalny.com/)
+*   [http://kuban-rc.com/](http://kuban-rc.com/)
 *   [http://www.domskala.ru/](http://www.domskala.ru/)
 *   [http://ruport.ru/](http://ruport.ru/)
+*   [http://ir.magnit.com/](http://ir.magnit.com/)
+*   [https://fbk.info/](https://fbk.info/)
+*   [http://rosyama.ru/](http://rosyama.ru/)
 *   [http://зарулем23.рф/](http://зарулем23.рф/)
+*   [https://20.navalny.com/](https://20.navalny.com/)
 *   [http://optrika.ru/](http://optrika.ru/)
 *   [https://prokuror.fbk.info/](https://prokuror.fbk.info/)
 *   [http://www.semeyniy-uzhin.ru/](http://www.semeyniy-uzhin.ru/)
 *   [http://www.gagarin-catering.ru/](http://www.gagarin-catering.ru/)
 *   [http://kristall-komfort.ru/](http://kristall-komfort.ru/)
-*   [http://ir.magnit.com/](http://ir.magnit.com/)
 *   [http://buhtagold.ru/](http://buhtagold.ru/)
 *   [http://buhtagold.ru/content/7/](http://buhtagold.ru/content/7/)
 *   [http://cifra-group.ru/](http://cifra-group.ru/)
@@ -122,4 +123,4 @@ Phone – [+7 918 211-37-92](tel:+79182113792)
 
 Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
 
-GitHub – [uncleF](https://github.com/uncleF)(updated on 05/06/2016)
+GitHub – [uncleF](https://github.com/uncleF)(updated on 11/25/2016)
