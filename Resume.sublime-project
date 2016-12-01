@@ -31,21 +31,9 @@
       "name": "Resume: Sass",
       "path": "dev/res/sass"
     }, {
-      "file_exclude_patterns":
-      [
-        "*.jpg",
-        "*.gif",
-        "*.png",
-        "*.ico",
-        "*.svg"
-      ],
       "follow_symlinks": true,
-      "name": "Resume: Meta",
-      "path": "meta"
-    }, {
-      "follow_symlinks": true,
-      "name": "Resume: Docs",
-      "path": "docs"
+      "name": "Resume: Data",
+      "path": "data"
     }
   ]
 }
