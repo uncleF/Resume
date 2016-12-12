@@ -10,12 +10,14 @@ GitHub – [uncleF](https://github.com/uncleF)
 
 ## Profile
 
-Front-end developer with a 5 years computer science degree (from the [Kuban State University](http://www.kubsu.ru/en/)), 10 years of experience and deep understanding of modern front-end development process and its challenges. Experienced in prototyping and developing user interfaces (sites, apps, emails, IPTV, interactive expo booths, etc.). Have some experience in project management and developing native apps for the iOS and Android. Obsessed with efficient development workflow, personal productivity and constant growth as a developer.
+Front-end developer with a 5 year computer science degree (from the [Kuban State University](http://www.kubsu.ru/en/)), 10 years of experience and deep understanding of modern front-end development process and its challenges. Experienced in prototyping and developing user interfaces (sites, apps, emails, IPTV, interactive expo booths, etc.). Have some experience in project management and developing native apps for the iOS and Android. Obsessed with efficient development workflow, personal productivity and constant growth as a developer.
 
 *   Able to complete projects rpidly and efficiently.
 *   Good problem solving and collaborative skills. Rapid learner.
 *   Write clean and comprehensive code.
-*   Native Russian speaker. Proficient in English. Understand French and Portuguese.
+*   Native Russian speaker.
+*   Proficient in English.
+*   Understand French and Portuguese.
 
 ### Areas of Expertise
 
@@ -38,7 +40,7 @@ Front-end developer with a 5 years computer science degree (from the [Kuban Stat
 
 ### Tools
 
-*   My own open source [development tool](https://github.com/uncleF/TemplateX) for rapid project workflow setup
+*   An open source [development tool](https://github.com/uncleF/TemplateX) for rapid project workflow setup
 *   Sublime Text, Atom, Eclipse, Xcode, Android Studio
 *   Emmet, npm, Yarn, Grunt, Gulp, Webpack, Bower, Apache Ant
 *   Adobe Photoshop, Sketch, Blender, Inkscape, Adobe Illustrator
@@ -124,4 +126,4 @@ Phone – [+7 918 211-37-92](tel:+79182113792)
 
 Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
 
-GitHub – [uncleF](https://github.com/uncleF)(updated on 12/10/2016)
+GitHub – [uncleF](https://github.com/uncleF)(updated on 12/12/2016)
