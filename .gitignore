@@ -17,11 +17,9 @@ npm-debug.log
 .tmp
 node_modules
 bower_components
-backstop
 
 #TX
 
-build
 design
 
 *.build.zip
