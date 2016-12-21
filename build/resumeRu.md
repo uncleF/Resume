@@ -100,7 +100,7 @@ Front-end разработчик с дипломом факультета при
 ## Портфолио
 
 *   [http://kuban-rc.com/](http://kuban-rc.com/)
-*   [http://skala.scaph.ru/](http://skala.scaph.ru/)
+*   [http://www.domskala.ru/](http://www.domskala.ru/)
 *   [http://ruport.ru/](http://ruport.ru/)
 *   [http://ir.magnit.com/](http://ir.magnit.com/)
 *   [https://fbk.info/](https://fbk.info/)
@@ -130,4 +130,4 @@ E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Рез
 
 Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
 
-GitHub – [uncleF](https://github.com/uncleF)(последнее обновление 12.12.2016)
+GitHub – [uncleF](https://github.com/uncleF)(последнее обновление @tx-revisionDateRu)

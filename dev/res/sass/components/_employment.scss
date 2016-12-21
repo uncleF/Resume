@@ -1,0 +1,11 @@
+/* Employment */
+
+$emplymentDate-color: $red-light;
+
+.emplymentDate {
+  @include tx-font-size(h6, 2.5);
+  @include tx-rhythm(0, -1);
+  display: block;
+  color: $emplymentDate-color;
+  white-space: nowrap;
+}

@@ -8,6 +8,6 @@
   "id-unique": true,
   "src-not-empty": true,
   "id-class-value": true,
-  "style-disabled": true,
+  "style-disabled": false,
   "img-alt-require": true
 }

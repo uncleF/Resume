@@ -1,0 +1,47 @@
+/* Contacts */
+
+$contactItem-color: $gray;
+
+$contactsLink-color: $white;
+$contactsLink-borderColor: $gray;
+
+.contacts {
+  @extend %u-descriptionListReset;
+  @include tx-rhythm(2, 0);
+  font-size: 0;
+
+  > dt {
+    @include tx-inline-block;
+    @include tx-font-size($fontSize * .85);
+    width: 0;
+    color: $contactItem-color;
+    vertical-align: top;
+    white-space: nowrap;
+
+    &:after {
+      @include tx-pseudo(relative, inline, ': ');
+    }
+
+  }
+
+  > dd {
+    @include tx-inline-block;
+    @include tx-font-size($fontSize);
+    margin: 1.25em 3em 0 0;
+    vertical-align: bottom;
+  }
+
+  a {
+    border-bottom: 1px solid $contactsLink-borderColor;
+    color: $contactsLink-color;
+    text-decoration: none;
+
+    &:visited,
+    &:hover,
+    &:active {
+      color: $contactsLink-color;
+    }
+
+  }
+
+}
