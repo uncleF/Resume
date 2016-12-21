@@ -1,0 +1,30 @@
+/* Footer */
+
+$footer-color: $white;
+
+$updated-color: $gray-dark;
+
+.footer {
+  @extend %headerBackgroundStyle;
+  @include tx-rhythm(3, 0);
+  @include tx-rhythm-padding(0, 2);
+  overflow: hidden;
+  color: $footer-color;
+
+  &:before {
+    @include tx-pseudo(relative);
+    @include tx-rhythm(0, 2);
+    height: 1px;
+  }
+
+}
+
+.footerContent {
+  @extend %contentStyle;
+}
+
+.updated {
+  @include tx-rhythm(2, 0);
+  display: block;
+  color: $updated-color;
+}

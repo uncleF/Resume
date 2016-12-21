@@ -1,12 +1,15 @@
 .gitconfig.local
 
 .DS_Store
+.DS_Store?
+._*
 ._*.*
 .Spotlight-V100
 .Trashes
 Desktop.ini
 ehthumbs.db
 Thumbs.db
+npm-debug.log
 
 #Dev
 
@@ -14,12 +17,10 @@ Thumbs.db
 .tmp
 node_modules
 bower_components
-npm-debug.log
 
 #TX
 
 design
-tests
 
 *.build.zip
 *.sublime-workspace

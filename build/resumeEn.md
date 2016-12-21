@@ -126,4 +126,4 @@ Phone – [+7 918 211-37-92](tel:+79182113792)
 
 Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
 
-GitHub – [uncleF](https://github.com/uncleF)(updated on 12/12/2016)
+GitHub – [uncleF](https://github.com/uncleF)(updated on @tx-revisionDateEn)

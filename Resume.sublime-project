@@ -1,51 +1,47 @@
 {
-  "color_variables_files":
-  [
-    "/Users/uncleFucka/Projects/Resume/dev/res/sass/project/_project.scss"
-  ],
-  "folders":
-  [
-    {
-      "folder_exclude_patterns":
-      [
-        "*"
-      ],
-      "file_exclude_patterns":
-      [
-        "*.zip",
-        "*.sublime-project"
-      ],
-      "follow_symlinks": true,
-      "name": "Resume: Project",
-      "path": "."
-    }, {
-      "follow_symlinks": true,
-      "name": "Resume: HTML",
-      "path": "dev/res/templates"
-    }, {
-      "follow_symlinks": true,
-      "name": "Resume: Portfolio",
-      "path": "portfolio"
-    }, {
-      "follow_symlinks": true,
-      "name": "Resume: Sass",
-      "path": "dev/res/sass"
-    }, {
-      "file_exclude_patterns":
-      [
-        "*.jpg",
-        "*.gif",
-        "*.png",
-        "*.ico",
-        "*.svg"
-      ],
-      "follow_symlinks": true,
-      "name": "Resume: Meta",
-      "path": "meta"
-    }, {
-      "follow_symlinks": true,
-      "name": "Resume: Docs",
-      "path": "docs"
-    }
-  ]
+	"color_variables_files":
+	[
+		"/Users/biryukov/Projects/Resume/dev/res/sass/project/_project.scss",
+		"/Users/uncleFucka/Projects/Resume/dev/res/sass/project/_project.scss",
+		"D:/Projects/Projects/Resume/dev/res/sass/project/_project.scss"
+	],
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.zip",
+				"*.sublime-project"
+			],
+			"folder_exclude_patterns":
+			[
+				"build",
+				"design",
+				"dev",
+				"data",
+				"docs",
+				"meta",
+				"node_modules",
+				"sources",
+				"tests"
+			],
+			"name": "Resume: Project",
+			"path": "."
+		},
+		{
+			"name": "Resume: HTML",
+			"path": "dev/res/templates"
+		},
+		{
+			"name": "Resume: Data",
+			"path": "data"
+		},
+		{
+			"name": "Resume: Sass",
+			"path": "dev/res/sass"
+		},
+		{
+			"path": "/Users/biryukov/Projects/TemplateX"
+		}
+	]
 }

@@ -1,0 +1,31 @@
+/* Header */
+
+$header-color: $white;
+$header-background: $black-light;
+
+%headerBackgroundStyle {
+  background: $header-background;
+}
+
+.header {
+  @extend %headerBackgroundStyle;
+  @include tx-rhythm(0, 2.25);
+  @include tx-rhythm-padding(3.75, 3.75);
+  overflow: hidden;
+  color: $header-color;
+}
+
+.headerContent {
+  @extend %contentStyle;
+}
+
+
+
+/* Occupation */
+
+$occupation-color: $gray;
+
+.occupation {
+  display: block;
+  color: $occupation-color;
+}

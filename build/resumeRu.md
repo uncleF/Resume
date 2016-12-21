@@ -130,4 +130,4 @@ E-mail – [uncle.funkay@gmail.com](mailto:uncle.funkay@gmail.com?subject=Рез
 
 Skype – [buzz_Killingt0n](skype:buzz_Killingt0n?chat)
 
-GitHub – [uncleF](https://github.com/uncleF)(последнее обновление 12.12.2016)
+GitHub – [uncleF](https://github.com/uncleF)(последнее обновление @tx-revisionDateRu)

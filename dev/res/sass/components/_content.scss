@@ -1,0 +1,18 @@
+/* Content */
+
+%contentStyle {
+  max-width: txf-breakpoint(desktopMin);
+  padding: 0 $gap;
+  margin: 0 auto;
+}
+
+
+
+/* Sections */
+
+.section {
+  @extend %contentStyle;
+  @include tx-rhythm(0, 2.25, $marginLeft: auto, $marginRight: auto);
+  page-break-after: always;
+  break-after: always;
+}
