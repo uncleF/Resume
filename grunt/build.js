@@ -15,6 +15,7 @@ module.exports = (grunt, options) => {
     'prettify',
     'wkhtmltopdf',
     'wait',
+    'clean:pdf',
     'html2md',
     'string-replace:md'
   ]);

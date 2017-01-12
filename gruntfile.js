@@ -29,7 +29,7 @@ var CONFIG = {
 
   PAGE_WIDTH: '1000px',            // PDF Page Width
   PAGE_HEIGHT: '1414px',           // PDF Page Height
-  PAGE_MARGIN: [5, 0, 5, 0],  // PDF Page Margin
+  PAGE_MARGIN: [12, 0, 5, 0, 5],   // PDF Page Margin
 
 }
 

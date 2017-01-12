@@ -3,7 +3,7 @@
 module.exports = (grunt) => {
 
   grunt.registerTask('quality', [
-    'htmlhint',
+    // 'htmlhint',
     // 'arialinter',
     'scsslint',
     'csslint',

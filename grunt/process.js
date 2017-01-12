@@ -2,9 +2,6 @@
 
 module.exports = (grunt, options) => {
 
-  var project = options.project;
-  var helpers = options.helpers;
-
   grunt.registerTask('process-html', [
     'processhtml'
   ]);
