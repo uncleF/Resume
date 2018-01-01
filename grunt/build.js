@@ -15,6 +15,7 @@ module.exports = (grunt, options) => {
     'prettify',
     'wkhtmltopdf',
     'wait',
+    'clean:pdf',
     'html2md',
     'string-replace:md'
   ]);
@@ -23,7 +24,8 @@ module.exports = (grunt, options) => {
     'string-replace:build',
     'inlineCSS',
     'cleanempty',
-    'clean:buildRes'
+    'clean:buildRes',
+    'rename'
   ]);
 
   grunt.registerTask('build', [
