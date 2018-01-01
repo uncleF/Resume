@@ -8,4 +8,10 @@ $emplymentDate-color: $red-light;
   display: block;
   color: $emplymentDate-color;
   white-space: nowrap;
+
+  h4 & {
+    @include tx-rhythm(0, 0);
+    line-height: 2;
+  }
+
 }

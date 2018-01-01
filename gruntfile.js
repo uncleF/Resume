@@ -27,9 +27,9 @@ var CONFIG = {
   CSS_DIR: 'css',                  // CSS
   CSS_FILENAME: 'styles',          // CSS Filename
 
-  PAGE_WIDTH: '1000px',            // PDF Page Width
-  PAGE_HEIGHT: '1414px',           // PDF Page Height
-  PAGE_MARGIN: [12, 0, 5, 0, 5],   // PDF Page Margin
+  PAGE_WIDTH: '275mm',             // PDF Page Width
+  PAGE_HEIGHT: '325mm',            // PDF Page Height
+  PAGE_MARGIN: [30, 0, 5, 0, 10],  // PDF Page Margin
 
 }
 

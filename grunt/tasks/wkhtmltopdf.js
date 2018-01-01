@@ -2,10 +2,12 @@ module.exports = (grunt, options) => {
 
   var project = options.project;
 
+  console.log(`${project.build.dir}/${project.name.toLowerCase()}En.pdf`);
+
   return {
     resumeEnPDF: {
       src: [`${project.build.dir}/*En-pdf.html`, `!${project.build.dir}/*-emailTemplate.html`, `!${project.build.dir}/*.mail.html`],
-      dest: `${project.build.dir}/${project.name.toLowerCase()}En.pdf`,
+      dest: `${project.build.dir}`,
       args: [
         '--margin-bottom', project.pdf.margin[2],
         '--margin-left', project.pdf.margin[3],
@@ -20,7 +22,7 @@ module.exports = (grunt, options) => {
     },
     resumeRuPDF: {
       src: [`${project.build.dir}/*Ru-pdf.html`, `!${project.build.dir}/*-emailTemplate.html`, `!${project.build.dir}/*.mail.html`],
-      dest: `${project.build.dir}/${project.name.toLowerCase()}Ru.pdf`,
+      dest: `${project.build.dir}`,
       args: [
         '--margin-bottom', project.pdf.margin[2],
         '--margin-left', project.pdf.margin[3],

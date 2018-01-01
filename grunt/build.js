@@ -24,7 +24,8 @@ module.exports = (grunt, options) => {
     'string-replace:build',
     'inlineCSS',
     'cleanempty',
-    'clean:buildRes'
+    'clean:buildRes',
+    'rename'
   ]);
 
   grunt.registerTask('build', [

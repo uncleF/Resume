@@ -105,7 +105,7 @@ module.exports = (grunt, options) => {
           pattern: /<\/dd>(\r?\n|\r)+/gi,
           replacement: '\n\n'
         }, {
-          pattern: /<header class="header">\n\n<div class="headerContent">\n\n*/gi,
+          pattern: /<header class="header">(\r?\n|\r){2}<div class="headerContent">(\r?\n|\r)(\r?\n|\r)*/gi,
           replacement: ''
         }, {
           pattern: /<footer(.|\r?\n|\r)*<\/html>/gi,
@@ -123,11 +123,14 @@ module.exports = (grunt, options) => {
           pattern: /(\s)*<((?!>).)*>/gi,
           replacement: ''
         }, {
-          pattern: /(\n){3,}/gi,
+          pattern: /(\r?\n|\r){3,}/gi,
           replacement: '\n\n'
         }, {
-          pattern: /(\n)*(\s)+$/gi,
+          pattern: /(\r?\n|\r)*(\s)+$/gi,
           replacement: ''
+        }, {
+          pattern: /#(\w)/gi,
+          replacement: ' $1'
         }]
       },
       files: {
