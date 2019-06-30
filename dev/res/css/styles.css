@@ -1,5 +1,4 @@
 /* Inline-block */
-
 ul > li:before,
 kbd,
 .contacts > dt,
@@ -7,8 +6,10 @@ kbd,
   display: inline-block;
 }
 
+/* Inline-block IE */
+/* Pseudo Element */
+/* Verticla Alignment */
 /* Baseline, Typography & Vertical Rhythm */
-
 article,
 aside,
 canvas,
@@ -58,9 +59,12 @@ h6 {
   font-weight: bold;
   text-rendering: auto;
   -webkit-column-break-after: avoid;
+  page-break-after: avoid;
   break-after: avoid;
   orphans: 3;
   widows: 3;
+
+  -moz-column-break-after: avoid;
 }
 
 h1 {
@@ -384,7 +388,6 @@ hr {
 }
 
 /* Selection */
-
 ::-moz-selection {
   color: #fff;
   background: #176191;
@@ -395,7 +398,6 @@ hr {
 }
 
 /* Focus */
-
 a:focus,
 input:focus,
 select:focus,
@@ -405,7 +407,6 @@ textarea:focus {
 }
 
 /* Links */
-
 a {
   color: #176191;
   -webkit-tap-highlight-color: rgba(15, 66, 99, .25);
@@ -427,7 +428,6 @@ a:active {
 }
 
 /* Forms */
-
 fieldset {
   padding: 0;
   border: 0;
@@ -524,6 +524,12 @@ textarea::-webkit-input-placeholder {
   opacity: 1;
 }
 
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #666;
@@ -579,8 +585,8 @@ textarea {
   font-size: inherit;
 }
 
+/* TemplateX Baseline */
 /* Fast Touch */
-
 a,
 label,
 select,
@@ -590,20 +596,15 @@ button {
 }
 
 /* Link Touch State */
-
 .mdz-touchevents a:hover,
 .mdz-touchevents a:active {
   color: #176191;
 }
 
 /* Print Baseline, Typography & Vertical Rhythm */
-
 @media print {
-
   /* csslint ignore:start */
-
   /* Typography & Vertical Rhythm */
-
   pre,
   code,
   var,
@@ -615,74 +616,69 @@ button {
     color: #333;
     text-decoration: none;
   }
-
   html,
   body {
     background: #fff;
   }
-
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
   blockquote,
   img,
   table,
   tr {
     -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
     break-inside: avoid;
-  }
 
+    -moz-column-break-inside: avoid;
+  }
   acronym[title]:after,
   abbr[title]:after,
   ins[title]:after,
   del[title]:after {
     content: ' (' attr(title) ')';
   }
-
   @page {
     size: A4;
     margin: .5cm;
   }
-
   body {
     color: #333;
     font-size: 12pt;
     line-height: 1.5;
   }
-
   p {
     orphans: 3;
     widows: 3;
   }
-
   thead {
     display: table-header-group;
   }
-
   /* Links */
-
   a[href^='javascript:']:after,
   a[href^='#']:after,
   a[href^='mailto:']:after,
   a[href^='tel:']:after {
     content: '';
   }
-
   a {
     color: #333;
     text-decoration: none;
   }
-
   a:visited,
   a:hover,
   a:active {
     color: #333;
   }
-
   a:after {
     content: ' (' attr(href) ')';
     font-size: 90%;
   }
-
   /* Forms */
-
   form,
   input,
   select,
@@ -690,14 +686,10 @@ button {
   textarea {
     display: none;
   }
-
   /* csslint ignore:end */
-
-
 }
 
 /* Layout */
-
 html {
   -webkit-overflow-scrolling: touch;
   min-height: 100%;
@@ -714,36 +706,26 @@ body {
 }
 
 /* Phone Layout */
-
 @media only screen and (max-width: 45em) {
-
   /* Layout */
-
   body {
     min-width: 0;
   }
-
-
 }
 
 /* Print Layout */
-
 @media print {
-
   /* Layout */
-
   body {
     width: auto;
     min-width: 0;
     max-width: none;
     padding: 2.54cm;
   }
-
-
 }
 
+/* HDPI */
 /* Reset */
-
 .contacts,
 .contacts > dt,
 .contacts > dd {
@@ -752,15 +734,15 @@ body {
 }
 
 /* Lists Reset */
-
 .contacts > dt,
 .contacts > dd {
   font-weight: normal;
   font-style: normal;
 }
 
+/* Image Blocker */
+/* Visually Hidden */
 /* Contacts */
-
 .contacts {
   margin: 48px 0 0;
   margin: 3rem 0 0;
@@ -804,7 +786,6 @@ body {
 }
 
 /* Content */
-
 .section,
 .footerContent,
 .headerContent {
@@ -814,16 +795,25 @@ body {
 }
 
 /* Sections */
-
 .section {
   margin: 0 auto 54px;
   margin: 0 auto 3.375rem;
   -webkit-column-break-after: always;
+  page-break-after: always;
   break-after: always;
+
+  -moz-column-break-after: always;
+}
+
+.section:last-child {
+  -webkit-column-break-after: avoid;
+  page-break-after: avoid;
+  break-after: avoid;
+
+  -moz-column-break-after: avoid;
 }
 
 /* Employment */
-
 .emplymentDate {
   display: block;
   margin: 0 0 -24px;
@@ -842,7 +832,6 @@ h4 .emplymentDate {
 }
 
 /* Footer */
-
 .footer {
   overflow: hidden;
   padding: 0 0 48px;
@@ -869,7 +858,6 @@ h4 .emplymentDate {
 }
 
 /* Header */
-
 .footer,
 .header {
   background: #333;
@@ -885,14 +873,12 @@ h4 .emplymentDate {
 }
 
 /* Occupation */
-
 .occupation {
   display: block;
   color: #666;
 }
 
 /* PDF */
-
 .headerPDF {
   color: #fff;
   background: #333;
@@ -921,7 +907,7 @@ h4 .emplymentDate {
 }
 
 /* Links */
-
 .links {
   white-space: nowrap;
 }
+/*# sourceMappingURL=styles.css.map */

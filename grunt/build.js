@@ -25,13 +25,14 @@ module.exports = (grunt, options) => {
     'inlineCSS',
     'cleanempty',
     'clean:buildRes',
+    'clean:reports',
     'rename'
   ]);
 
   grunt.registerTask('build', [
     'build-resources',
-    'build-finalize',
-    'test'
+    'test',
+    'build-finalize'
   ]);
 
   grunt.registerTask('build-fast', [

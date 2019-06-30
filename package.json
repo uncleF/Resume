@@ -30,7 +30,7 @@
     "grunt-postcss": "*",
     "grunt-prettify": "*",
     "grunt-processhtml": "*",
-    "grunt-sass": "*",
+    "grunt-sass": "^2.1.0",
     "grunt-scss-lint": "*",
     "grunt-string-replace": "*",
     "grunt-uncss": "*",

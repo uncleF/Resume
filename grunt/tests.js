@@ -5,9 +5,9 @@ module.exports = (grunt) => {
   grunt.registerTask('quality', [
     // 'htmlhint',
     // 'arialinter',
-    'scsslint',
+    // 'scsslint',
     'csslint',
-    'csscss',
+    // 'csscss',
     'colorguard',
   ]);
 

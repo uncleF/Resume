@@ -15,4 +15,10 @@
   @include tx-rhythm(0, 2.25, $marginLeft: auto, $marginRight: auto);
   page-break-after: always;
   break-after: always;
+
+  &:last-child {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
 }
