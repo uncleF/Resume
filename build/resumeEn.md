@@ -116,6 +116,8 @@ Frontend developer with a 5 year **computer science degree** (from the [Kuban 
 
 ## Portfolio
 
+*   [https://wind-channel.com/en](https://wind-channel.com/en)
+*   [https://letomall.ru/](https://letomall.ru/)
 *   [http://shambalacasino.ru/](http://shambalacasino.ru/)
 *   [http://megastyle.mega.ru/](http://megastyle.mega.ru/)
 *   [http://medlex.ru/](http://medlex.ru/)
@@ -124,8 +126,6 @@ Frontend developer with a 5 year **computer science degree** (from the [Kuban 
 *   [https://2018.navalny.com/shop/](https://2018.navalny.com/shop/)
 *   [https://datsun-travelers.ru/](https://datsun-travelers.ru/)
 *   [http://brandsandtalents.ru/](http://brandsandtalents.ru/)
-*   [http://vouch.fasten.com/](http://vouch.fasten.com/)
-*   [https://fasten.com/](https://fasten.com/)
 *   [http://enerberg.com/](http://enerberg.com/)
 *   [http://kuban-rc.com/](http://kuban-rc.com/)
 *   [https://20.navalny.com/](https://20.navalny.com/)
