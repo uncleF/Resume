@@ -105,6 +105,9 @@ module.exports = (grunt, options) => {
           pattern: /<\/dd>(\r?\n|\r)+/gi,
           replacement: '\n\n'
         }, {
+          pattern: /<span class="occupation">(.*)<\/span>/gi,
+          replacement: '– $1'
+        }, {
           pattern: /<header class="header">(\r?\n|\r){2}<div class="headerContent">(\r?\n|\r)(\r?\n|\r)*/gi,
           replacement: ''
         }, {

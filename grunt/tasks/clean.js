@@ -7,7 +7,7 @@ module.exports = (grunt, options) => {
     reports: [`*.css`],
     build: [project.build.dir],
     buildRes: [`${project.build.dir}${project.res.dir.replace(project.dir, '')}`],
-    pdf: [`${project.build.dir}*-pdf*.html`]
+    pdf: [`${project.build.dir}*-pdf*.html`],
   };
 
 };
