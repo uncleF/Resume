@@ -120,6 +120,8 @@ Frontend разработчик с дипломом факультета **пр
 
 ## Портфолио
 
+*   [https://wind-channel.com/en](https://wind-channel.com/en)
+*   [https://letomall.ru/](https://letomall.ru/)
 *   [http://shambalacasino.ru/](http://shambalacasino.ru/)
 *   [http://megastyle.mega.ru/](http://megastyle.mega.ru/)
 *   [http://medlex.ru/](http://medlex.ru/)
@@ -128,8 +130,6 @@ Frontend разработчик с дипломом факультета **пр
 *   [https://2018.navalny.com/shop/](https://2018.navalny.com/shop/)
 *   [https://datsun-travelers.ru/](https://datsun-travelers.ru/)
 *   [http://brandsandtalents.ru/](http://brandsandtalents.ru/)
-*   [http://vouch.fasten.com/](http://vouch.fasten.com/)
-*   [https://fasten.com/](https://fasten.com/)
 *   [http://enerberg.com/](http://enerberg.com/)
 *   [http://kuban-rc.com/](http://kuban-rc.com/)
 *   [https://20.navalny.com/](https://20.navalny.com/)
