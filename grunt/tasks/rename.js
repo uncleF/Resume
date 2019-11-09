@@ -10,6 +10,14 @@ module.exports = (grunt, options) => {
     pdfRu: {
       src: [`${project.build.dir}/resumeRu-pdf.pdf`],
       dest: [`${project.build.dir}/resumeRu.pdf`],
+    },
+    pdfBriefEn: {
+      src: [`${project.build.dir}/resumeBriefEn-pdf.pdf`],
+      dest: [`${project.build.dir}/resumeBriefEn.pdf`],
+    },
+    pdfBriefRu: {
+      src: [`${project.build.dir}/resumeBriefRu-pdf.pdf`],
+      dest: [`${project.build.dir}/resumeBriefRu.pdf`],
     }
   };
 
