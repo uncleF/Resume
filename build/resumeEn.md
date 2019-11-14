@@ -22,7 +22,7 @@ Worked on a variety of different (by size and difficulty) projects: sites, *
 
 Have experience working with **Svelte**, **React**, Vue and **Electron**. Used **Sass**, **Stylus** and PostCSS.
 
-Very well familiar with modern frontend tooling ecosystem — **rollup**, webpack, **Grunt**, etc..
+Well versed in modern frontend tooling ecosystem — **rollup**, webpack, **Grunt**, etc..
 
 Love (and sometimes prefer) working with pure HTML/CSS/JavaScript stack without template engines, preprocessors and frameworks.
 
