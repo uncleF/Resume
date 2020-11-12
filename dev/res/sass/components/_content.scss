@@ -16,9 +16,19 @@
   page-break-after: always;
   break-after: always;
 
+  &-brief {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
   &:last-child {
     page-break-after: avoid;
     break-after: avoid;
   }
 
+}
+
+.article {
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
