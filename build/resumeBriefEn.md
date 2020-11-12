@@ -10,8 +10,6 @@ GitHub – [uncleF](https://github.com/uncleF)
 
 ## Experience
 
-ё
-
 Frontend developer with a **[computer science degree](http://www.kubsu.ru/en/)** and more than **10 years of experience**.
 
 Speak **English**. Understand **Portuguese** (B1) and **French** (B1).
