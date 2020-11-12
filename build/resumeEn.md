@@ -10,7 +10,7 @@ GitHub – [uncleF](https://github.com/uncleF)
 
 ## Profile
 
-Frontend developer with a **5 year computer science degree** (from [Kuban State University](http://www.kubsu.ru/en/)), more than **10 years of diverse experience** and deep understanding of modern frontend development process and its challenges. Experienced in prototyping and developing user interfaces, project and team management.
+Frontend developer with a **5 year computer science degree** (from [Kuban State University](http://www.kubsu.ru/en/)), more than **10 years of diverse experience** and deep understanding of modern frontend development process and its challenges. Experienced in game development, prototyping and developing user interfaces, project and team management.
 
 Able to quickly come up with solutions for challenges of varying degrees of difficulty. Obsessed with efficient development workflow, personal productivity and constant growth as a developer.
 
@@ -18,17 +18,29 @@ Speak English. Understand Portuguese (B1) and French (B1).
 
 ### Experience
 
-Worked on a variety of different (by size and difficulty) projects: sites, **PWAs**, IPTV, IoT, interactive expo booths. Audited web-applications for performance issues.
+Worked on wide variety of different (by size and complexity) projects: sites, **games**, **PWAs**, IPTV, IoT, interactive expo booths. Auditedweb-applications for performance issues.
 
-Have experience working with **Svelte**, **React**, Vue and **Electron**. Used **Sass**, **Stylus** and PostCSS.
+Have experience working with **Svelte**, **React** and **Electron**. Used **Sass** and PostCSS.
 
-Well versed in modern frontend tooling ecosystem — **rollup**, webpack, **Grunt**, etc..
+Well versed in modern frontend tooling ecosystem — **rollup**, **Snowpack**, webpack, etc.
 
-Love (and sometimes prefer) working with pure HTML/CSS/JavaScript stack without template engines, preprocessors and frameworks.
+Enjoy working with graphics (2D, SVG, WebGL) and creating original interactive apps & games.
 
-Passionate about web performance and accessibility. Like working with graphics (2D, SVG, 3D) and creating games.
+Love working with pureHTML/CSS/JavaScript stack without template engines, preprocessors and frameworks.
+
+Passionate about web performance and accessibility.
 
 ## Past Employment
+
+## October 2019 — Currently [Happy Games Studio](https://hgstudio.ru/)
+
+#### Frontend Team Lead & Consultant, Unity Developer
+
+*   **Lead a team** of 3 developers working on a WebgGL based browser game(**PixiJS**).
+*   Developed a browser 3Dpromo-game with physics based gameplay (**three.js**, **Cannon.js**).
+*   Developed a dashboard for presentation and analysis of statistical data from the **Qlik** platform
+*   Actively participated in development of a small game using Unity engine.
+*   Participated in finding new developers.
 
 ## November 2016 — September 2019 [RU_PORT](http://ruport.ru/)
 
