@@ -5,7 +5,7 @@ module.exports = (grunt, options) => {
   var project = options.project;
   var tx = require('./tx/tx-project');
 
-  grunt.registerTask('inlineCSS', 'Inlining Modernizr', _ => tx.inlineCSS(grunt, project));
+  grunt.registerTask('inlineCSS', 'Inlining CSS', _ => tx.inlineCSS(grunt, project));
 
   grunt.registerTask('build-resources', [
     'compile',
@@ -13,6 +13,7 @@ module.exports = (grunt, options) => {
     'copy:build',
     'htmlmin',
     'prettify',
+    'inlineCSS',
     'wkhtmltopdf',
     'wait',
     'clean:pdf',
@@ -22,7 +23,6 @@ module.exports = (grunt, options) => {
 
   grunt.registerTask('build-finalize', [
     'string-replace:build',
-    'inlineCSS',
     'cleanempty',
     'clean:buildRes',
     'clean:reports',

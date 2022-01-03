@@ -20,11 +20,11 @@ Speak English. Understand Portuguese (B1) and French (B1).
 
 Worked on wide variety of different (by size and complexity) projects: sites, **games**, **PWAs**, IPTV, IoT, interactive expo booths. Auditedweb-applications for performance issues.
 
-Have experience working with **Svelte**, **React** and **Electron**. Used **Sass** and PostCSS.
+Have experience working with **Svelte**, **React**, **Unity**, **three.js**, **PIXI** and **Electron**. Used **TypeScript**, **Sass**, PostCSS, **esbuild**, etc..
 
 Well versed in modern frontend tooling ecosystem — **rollup**, **Snowpack**, webpack, etc.
 
-Enjoy working with graphics (2D, SVG, WebGL) and creating original interactive apps & games.
+Enjoy working with graphics (2D, SVG, WebGL) and sound, creating original interactive apps & games.
 
 Love working with pureHTML/CSS/JavaScript stack without template engines, preprocessors and frameworks.
 
@@ -36,30 +36,31 @@ Passionate about web performance and accessibility.
 
 #### Frontend Team Lead & Consultant, Unity Developer
 
-*   **Lead a team** of 3 developers working on a WebgGL based browser game(**PixiJS**).
+*   **Lead a team** of 3 developers working on a [WebgGL-based browser game](https://ok.ru/dachagame) (**PixiJS**).Actively participated in development of a 
+[Unity-based mobile game](https://play.google.com/store/apps/details?id=com.happygames.ships)
+
 *   Developed a browser 3Dpromo-game with physics based gameplay (**three.js**, **Cannon.js**).
 *   Developed a dashboard for presentation and analysis of statistical data from the **Qlik** platform
-*   Actively participated in development of a small game using Unity engine.
-*   Participated in finding new developers.
+*   Participated in search and hiring new developers.
 
 ## November 2016 — September 2019 [RU_PORT](http://ruport.ru/)
 
 ### December 2017 — September 2019 Frontend Team Lead
 
 *   **Lead a team** of 4 to 7 frontend developers.
-*   Developed 2 large-scale portals for 2 mall chains.
+*   Developed 2 large-scale portals for  mall chains.
 *   Created 3 navigation systems on the **[Visioglobe](https://visioglobe.com/)** platform.
-*   Developed an application on the **[Electron](https://electronjs.org/)** platform.
-*   Developed a [site that won **WOTD CSS Design Awards** competition](https://wind-channel.com/en).
-*   Implemented an **educational program** for frontend developers.
-*   Started an **internship program**.
-*   Participated in finding and hiring new developers.
-*   As a **full stack** volunteer developed a [news site for a small regional NGO](http://libertariansouth.ru).
+*   Developed [Electron-based](https://electronjs.org/) desktop application.
+*   Developed  [website that won **WOTD CSS Design Awards** competition](https://wind-channel.com/en).
+*   Implemented **educational program** for frontend developers.
+*   Started **internship program**.
+*   Participated in search and hiring new developers.
+*   As a **full stack** volunteer developed  [news site for a small regional NGO](http://libertariansouth.ru).
 
 ### November 2016 — December 2017 Senior Frontend Developer
 
 *   Was responsible for setting up a frontend development pipeline.
-*   Continued to work as a volunteer for [FBK (Anti-Corruption Foundation)](http://fbk.info/), including helped develop an online merchandising store.
+*   Continued to work as a volunteer for [FBK (Anti-Corruption Foundation)](http://fbk.info/).
 
 ## March 2014 — November 2016 Freelance
 

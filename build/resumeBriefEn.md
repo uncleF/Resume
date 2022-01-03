@@ -16,10 +16,9 @@ Speak **English**. Understand **Portuguese** (B1) and **French** (B1).
 
 ### Tools
 
-*   **Svelte**, **React** & **Electron**
-*   **Sass** & PostCSS
+*   **Svelte**, **React**, **Unity**, **three.js**, **PIXI** and **Electron**
+*   **TypeScript**, **Sass**, PostCSS, **esbuild**
 *   **rollup**, **Snowpack**, webpack, etc.
-*   Unity
 
 ## Past Employment
 

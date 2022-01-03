@@ -1,8 +1,7 @@
 'use strict';
 
 function inlineCSS(grunt, project) {
-  var cssRegEx = new RegExp('<link(?:.|\r?\n|\r)*' + project.res.css.filename + '.min.css(.)*>', 'g');
-  // var css = '<style rel="stylesheet" type="text/css">' + grunt.file.read(project.res.css.dir + project.res.css.filename + '.min.css') + grunt.file.read(project.res.css.dir + project.res.css.phone + ".min.css") + grunt.file.read(project.res.css.dir + project.res.css.print + ".min.css") + '</style>';
+  var cssRegEx = new RegExp('<link(?:.|\r?\n|\r)*' + project.res.css.filename + '.css(.)*>', 'g');
   var css = '<style rel="stylesheet" type="text/css">' + grunt.file.read(project.res.css.dir + project.res.css.filename + '.min.css') + '</style>';
   var files = grunt.file.expand([project.build.dir + '*.html']);
   var filesLength = files.length;
