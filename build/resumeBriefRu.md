@@ -16,10 +16,9 @@ GitHub – [uncleF](https://github.com/uncleF)
 
 ### Инструменты
 
-*   **Svelte**, **React** и **Electron**
-*   **Sass** и PostCSS
+*   **Svelte**, **React**, **Unity**, **three.js**, **PIXI** и **Electron**
+*   **TypeScript**, **Sass**, PostCSS, **esbuild**
 *   **rollup**, **Snowpack**, webpack и прочее.
-*   Unity
 
 ## Предыдущие места работы
 
